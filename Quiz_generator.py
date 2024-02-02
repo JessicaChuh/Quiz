@@ -7,24 +7,16 @@ with open('[English] Cybersecurity IDR_ Incident Detection & Response _ Google C
     text = file.read()
 
 # Replace line breaks and paragraphs with spaces
-text = re.sub(r'[\n\r]+', ' ', text)
+subtitle_string = re.sub(r'[\n\r]+', ' ', text)
 
-# Save the cleaned text to a new file or use it for further analysis
-with open('cleaned_text.txt', 'w') as file:
-    file.write(text)
-
-# Read the contents of the TXT file
-with open('cleaned_text.txt', 'r') as file:
-    subtitle_string = file.read()
+sentences = subtitle_string.split(". ")
+chunked_segments = []
+temp_segment = ""
 
 tokenizer = AutoTokenizer.from_pretrained("Sujithanumala/QuizBot.AI-base")
 model = AutoModelForSeq2SeqLM.from_pretrained("Sujithanumala/QuizBot.AI-base")
 max_token_limit = 500
 num_quizzes = 20
-
-sentences = subtitle_string.split(". ")
-chunked_segments = []
-temp_segment = ""
 
 for sentence in sentences:
     # Tokenize the current sentence
