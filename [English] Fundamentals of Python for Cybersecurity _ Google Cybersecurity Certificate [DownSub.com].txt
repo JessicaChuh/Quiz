@@ -1,0 +1,7372 @@
+
+
+ÁNGEL: The demand for
+security professionals
+
+has never been higher.
+
+Organizations across the
+world require professionals
+
+with your knowledge
+and the skills
+
+to protect their
+systems from attackers.
+
+And with the number of
+threats on the rise,
+
+security professionals often
+perform a diverse set of tasks.
+
+It's for this reason that
+we'll incorporate another tool
+
+as part of our security
+toolbox, a tool that
+
+can simplify many
+common security tasks,
+
+a tool that's used not only
+by security professionals,
+
+but also by engineers
+and data scientists.
+
+That tool is Python.
+
+Hi there.
+
+Congratulations on getting to
+the next step in your security
+
+journey.
+
+My name is Ángel, and I am a
+security engineer at Google.
+
+I'm excited to be joining
+you in this course.
+
+If you've been following
+along sequentially,
+
+you've already applied
+the specific tools
+
+that security professionals use
+during the detection, analysis,
+
+and response processes.
+
+And you also learned how to
+communicate with your computer
+
+through Linux and SQL.
+
+Now we'll focus on how
+programming in Python
+
+can be used for some
+common security tasks.
+
+As you consider your
+next career step,
+
+you might find that Python
+skills will help you
+
+in your everyday work.
+
+This course is designed
+for learning Python,
+
+starting with the basics.
+
+Then you'll gradually
+build on those basics
+
+and apply what you've learned
+to gain hands-on practice
+
+with security-related examples.
+
+Fortunately, Python is
+known for its readability.
+
+And just like all languages, it
+will get easier with practice.
+
+Pretty soon you might be using
+Python in your security career.
+
+Python can automate the manual
+effort of important tasks
+
+like file parsing.
+
+Python has helped me a lot
+in my career here at Google.
+
+I am part of a team
+responsible for protecting
+
+Google's infrastructure,
+which includes everything
+
+that employees use, from
+laptops and desktops
+
+to the network and
+cloud resources.
+
+We do this by engineering
+security solutions
+
+and automating the
+repeatable parts of our work.
+
+What I like about Python is that
+it has cross-platform support,
+
+and a lot of tools
+have already been
+
+developed by members of
+the security community that
+
+use Python.
+
+This makes it easy for me
+to find the tools I need
+
+and get support with
+[INAUDIBLE] so I
+
+can complete both
+my professional
+
+and personal projects.
+
+My hope is that this course
+will be helpful to you.
+
+Let's explore what we'll cover.
+
+First, you'll be introduced
+to basic programming
+
+concepts in Python.
+
+You'll learn why Python has
+been adopted by security
+
+professionals around the world.
+
+You will also develop and
+run your first program.
+
+After this, we'll focus on
+writing effective Python code.
+
+We'll discuss concepts that help
+make our work more efficient.
+
+Our next main topic is on
+working with strings and lists.
+
+These will be relevant
+to a lot of the data
+
+that you will encounter
+in a security context.
+
+And finally, you'll
+wrap up the course
+
+with an exploration of
+putting Python into practice.
+
+You'll learn about
+opening and parsing files
+
+and about debugging code.
+
+Python is certainly a useful
+skill for security analysts.
+
+Let's get started.
+
+
+
+The process of learning a
+new programming language
+
+is similar to learning
+a new language.
+
+For instance, like
+any human language,
+
+programming consists of
+words organized together
+
+to form lines of code.
+
+Lines of code are used to
+communicate with a computer,
+
+similar to a sentence, telling
+it how to perform a task.
+
+In this section,
+we're going to start
+
+learning the language needed
+to communicate with a computer
+
+as we explore some key
+components of Python.
+
+We'll start by introducing
+the basics of programming,
+
+starting with why security
+analysts use Python.
+
+Next we'll start building
+the foundations for Python.
+
+We'll discuss data types.
+
+Then we'll cover variables.
+
+Lastly, we're going to learn
+about specific statements we
+
+can make in Python, like
+conditional statements.
+
+Conditional statements
+help us incorporate logic
+
+into our programs.
+
+The second type of
+statement we'll learn about
+
+is the iterative statement.
+
+Iterative statements allow
+us to repeat a line of code
+
+multiple times without
+having to rewrite it.
+
+Learning Python helped
+me succeed in my career
+
+because using Python
+allows me to free up time
+
+from repetitive tasks
+and instead focus on more
+
+challenging tasks and problems.
+
+Successfully applying automation
+reduces my overall workload,
+
+increases productivity,
+and reduces
+
+the risk of human error.
+
+The use of automation
+also allows
+
+me to focus on my
+engineering tasks, which
+
+require more creativity,
+collaboration,
+
+and problem-solving.
+
+Are you ready to start
+programming in Python?
+
+Let's begin.
+
+Security professionals
+use a variety of tools.
+
+One of those tools is
+computer programming.
+
+Programming is used to create
+a specific set of instructions
+
+for a computer to execute tasks.
+
+Let's take an example
+of a vending machine.
+
+Think of a vending machine
+as a computer that supplies
+
+food or drinks to customers.
+
+To receive an item, the
+customer inserts the money
+
+into the machine and then
+selects the item they want.
+
+Let's say the customer provides
+the machine with a value of $5.
+
+The machine stores this value
+while you make your selection.
+
+If you select a candy
+bar that costs $2,
+
+the machine takes this
+input, otherwise known
+
+as an instruction, and
+then understands to output
+
+your candy bar for $2 and
+provides the change back of $3.
+
+There are many programming
+languages in existence.
+
+Here we'll focus on Python.
+
+Python is considered to be
+a general purpose language.
+
+This means that it can create a
+variety of different programs.
+
+And it isn't specialized
+in any particular problem.
+
+In fields such as
+web development
+
+and artificial
+intelligence, Python
+
+is typically used to
+build websites and perform
+
+data analysis.
+
+In security, the
+main reason we use
+
+Python is to automate our tasks.
+
+Automation is the
+use of technology
+
+to reduce human and
+manual effort to perform
+
+common and repetitive tasks.
+
+Python is generally best for
+automating short, simple tasks.
+
+For example, a
+security analyst who's
+
+dealing with a security
+incident might have a log
+
+with necessary information.
+
+Reading through these manually
+will take too much time.
+
+But Python can help
+sort through this
+
+so the analyst can
+find what they need.
+
+As another example,
+an analyst might
+
+use Python to manage
+an access control
+
+list, the list that
+controls who can access
+
+the system and its resources.
+
+It would be potentially less
+consistent if the analyst had
+
+to manually remove an
+employee's access every time
+
+they left the company.
+
+However, a Python
+program can periodically
+
+monitor this instead.
+
+Or Python could also
+perform some automated tasks
+
+like analyzing network traffic.
+
+Though these tasks can be done
+through outside applications,
+
+they are also possible
+through Python.
+
+In addition to automating
+individual tasks,
+
+Python can combine separate
+tasks into one workstream.
+
+For example, imagine a playbook
+indicates that an analyst needs
+
+to resolve a certain
+situation by delivering a file
+
+and then notifying the
+proper individuals.
+
+Python can connect these
+processes together.
+
+So why exactly might a
+security professional
+
+choose Python for these tasks?
+
+There are several
+advantages Python
+
+has as a programming language.
+
+For one, Python is user-friendly
+because it resembles
+
+human language, it requires less
+code, and it's easy to read.
+
+Python programmers
+also have the benefit
+
+of following the
+standard guidelines
+
+to ensure consistency with the
+design and readability of code.
+
+Another great reason
+for learning Python
+
+is that there is a large
+amount of online support.
+
+Python also has an extensive
+collection of building code
+
+that we can import and use to
+perform many different tasks.
+
+These are just
+some of the reasons
+
+why Python continues
+to be in high demand
+
+across different industries
+throughout the world.
+
+You'll most likely use it
+in your security career.
+
+Wow.
+
+All of this sounds great.
+
+So let's take a short break.
+
+And next, we'll finally get
+to run some Python code.
+
+I'll meet you in the next video.
+
+Hi there.
+
+Previously, we discussed
+the basics of Python.
+
+Now we'll practice
+writing and running code.
+
+When we work in Python,
+we refer to what we
+
+write as a script or a program.
+
+There are subtle
+differences between the two.
+
+Let's compare a computer program
+to a theater performance.
+
+Almost every theater performance
+includes a written script.
+
+Actors study and
+memorize a script
+
+to say it out loud
+to an audience.
+
+However, that's not
+the only component.
+
+There's also the
+whole performance.
+
+Directors make decisions on
+what kind of lighting to use,
+
+what costumes, or what
+the stage looks like.
+
+The performance as
+a whole involves
+
+a lot of design choices,
+like set design, lighting,
+
+and costumes.
+
+The process of creating
+this production
+
+is similar to the process
+of programming in Python.
+
+Programming involves a
+lot of design decisions.
+
+But the process of
+scripting in Python
+
+is more like writing
+the specific words
+
+that the actors will say.
+
+In Python, it's good practice
+to start with a comment.
+
+A comment is a note programmers
+make about the intention
+
+behind their code.
+
+Let's add one now.
+
+We start with the hash
+symbol to indicate
+
+that this is a comment.
+
+And then we'll add details
+about our intention.
+
+Here, we're going to print
+Hello Python to the screen.
+
+OK, now let's write our
+first line of Python code.
+
+
+
+This code uses print.
+
+
+
+Print outputs a specified
+object to the screen.
+
+After print, we put what we
+want to output in parentheses.
+
+In this case, we want to
+output the string Hello Python.
+
+We must place string
+data in quotation marks.
+
+These quotation marks are
+just one example of syntax
+
+that you will
+encounter in Python.
+
+Syntax refers to the
+rules that determine
+
+what is correctly structured
+in a computing language.
+
+And now we'll run this
+code so the computer
+
+can output the string.
+
+You just ran your
+first line of code.
+
+Since our syntax is correct,
+the string is now displayed.
+
+Now that you've experienced
+writing and running code
+
+in Python, we are ready to
+discuss its basic components.
+
+Meet you soon.
+
+
+
+Our next topic relates to
+categorizing data in Python.
+
+First, let's take a moment to
+consider another environment
+
+where we apply categories.
+
+We'll think about
+working in a kitchen.
+
+When cooking, we can categorize
+the ingredients we use.
+
+For example, carrots and
+peppers are vegetables.
+
+And chicken and beef are meat.
+
+These categories are important
+because they affect how
+
+we handle these ingredients.
+
+When working in
+Python, data types
+
+achieve a similar purpose.
+
+A data type is a category for
+a particular type of data item.
+
+Python uses several data types.
+
+We'll focus on string, float,
+integer, Boolean, and list
+
+data.
+
+When we printed the text Hello
+Python in our previous video,
+
+this was an example of a string.
+
+The string data
+is data consisting
+
+of an ordered sequence
+of characters.
+
+These characters could be
+letters, symbols, spaces,
+
+and even numbers.
+
+Numbers in the string
+data type cannot be used
+
+for calculations.
+
+All characters in
+a string must be
+
+placed inside quotation marks.
+
+Luckily, Python will tell you
+by giving you an error message
+
+if you forget a quotation mark.
+
+Let's use our code
+from before and explore
+
+what happens when we leave
+off the quotation mark.
+
+Notice how one of
+our quotation marks
+
+is missing at the
+end of the string.
+
+And when we run this code,
+we'll receive an error message.
+
+
+
+Python also supports
+numeric data types, as well.
+
+When working with numeric data,
+we don't put quotation marks
+
+around the data.
+
+Numeric data includes
+floats and integers.
+
+Float data is data consisting of
+a number with a decimal point.
+
+This includes fractions,
+like 2.1 or 10.5.
+
+It also includes whole
+numbers with a decimal point,
+
+like 2.0 or 10.0.
+
+Integer data is data consisting
+of a number that does not
+
+include a decimal point.
+
+Numbers such as 0, minus 9,
+and 5,000 are valid integers.
+
+So far we've used the print
+function to output a string.
+
+But it can also be used
+with float and integer
+
+types for calculations.
+
+Let's try out an
+example of this.
+
+First, since it's
+good practice, let's
+
+add a comment to explain
+the purpose of our code.
+
+Then we'll tell Python
+what to calculate.
+
+The output gives us the answer.
+
+1 plus 1 is 2.
+
+We can use print with
+float and integer data
+
+to perform all kinds of
+mathematical operations,
+
+like addition, subtraction,
+multiplication, and division.
+
+The third data type in
+Python is called a Boolean.
+
+Boolean data is data that can
+only be one of two values,
+
+either true or false.
+
+Booleans are useful for
+logic in our programs.
+
+For example, let's
+compare numbers
+
+and determine the Boolean
+values of these comparisons.
+
+First, we'll use
+the print function
+
+to evaluate if 10
+is less than 5.
+
+Then we'll also evaluate
+if 9 is less than 12.
+
+So what do you think?
+
+10 is not less than 5, but
+9 is less than 12, right?
+
+Let's see how Python
+handles this when we run it.
+
+Python agrees.
+
+The first line of
+output tells us
+
+that it's false to
+say 10 is less than 5.
+
+And the second tells us it's
+true to say 9 is less than 12.
+
+We'll use Booleans more
+when we start including
+
+conditions in our code.
+
+And the last data type
+we'll cover is lists.
+
+List data is a
+data structure that
+
+consists of a collection
+of data in sequential form.
+
+We'll create and
+print a list that
+
+prints all the usernames
+of the three individuals
+
+that have access to
+a confidential file.
+
+First, we'll add our
+comment about an intention
+
+to print this list.
+
+After the keyword print,
+we'll add our list.
+
+We need to place the
+list in brackets.
+
+After this, we place
+the individual items
+
+in the list in quotation marks
+and separate them with commas.
+
+OK.
+
+Now let's run this.
+
+As expected, we get the list.
+
+When it prints, it
+still has the brackets.
+
+This is just the beginning of
+what you can do with lists.
+
+As you grow with
+your Python skills,
+
+you'll learn about how
+you can access and edit
+
+individual items in the list.
+
+So that was a brief
+summary of five major data
+
+types in Python, string,
+integer, float, Boolean,
+
+and list.
+
+These data types are some
+of the more common ones
+
+you'll work with as we
+progress through our lessons.
+
+Previously we
+compared data types
+
+to the categories we have
+for different ingredients
+
+we use when cooking,
+like vegetables or meat.
+
+Some of these categories
+we use for data types
+
+are the string, float,
+integer, Boolean, and list.
+
+Now let's make
+another comparison.
+
+When working in the kitchen,
+we also use storage containers.
+
+These containers can hold
+a lot of different things.
+
+After one meal, a
+container might hold rice.
+
+And after another, it could
+hold something different,
+
+like pasta.
+
+In a similar way, in
+Python, we have variables.
+
+A variable is a container
+that stores data.
+
+To create a variable,
+you need a name for it.
+
+Then you add an equals sign and
+then an object to store in it.
+
+Creating a variable is
+often called assignment.
+
+The best practice
+for naming variables
+
+is to make the names relevant
+to what they're being used for.
+
+Let's use a variable
+to store a device ID.
+
+We'll name our
+variable device_id.
+
+Add the equals sign, and then
+assign it a value of h32rb17.
+
+
+
+Because the data type for
+this variable is a string,
+
+we'll place that value
+in quotation marks.
+
+Let's run the code.
+
+Our valuable is now
+saving to Python.
+
+The purpose of
+creating variables
+
+is to use them
+later in the code.
+
+Using variables can also be
+referred to as calling them.
+
+To call a variable,
+you type its name.
+
+This tells Python
+to use the object
+
+that the variable contains.
+
+Let's add to the code we've just
+written and call the variable.
+
+Let's just have it
+print the variable.
+
+To do this, we use the
+print function and ask it
+
+to print the value stored
+in the device_id variable.
+
+When using a variable
+in our print function,
+
+we don't use quotation marks.
+
+This time when we run
+it, something happens.
+
+Python prints h32rb17
+to the screen.
+
+Let's add one more line
+of code to demonstrate
+
+the difference between
+printing a variable
+
+and printing a string.
+
+We'll ask Python to print
+a string that contains
+
+another device ID, m50pi31.
+
+Because this is a string
+data and not a variable,
+
+we place it in quotation marks.
+
+Now let's run the code
+and see the results.
+
+It executes both
+printed statements.
+
+The first reads the variable and
+prints the value it contains,
+
+h32rb17.
+
+And the second reads the
+specified string and prints
+
+m50pi31.
+
+
+
+But if we could use
+the string directly,
+
+why do we need variables?
+
+Well, we often use variables
+to simplify our code
+
+or make it cleaner
+and easier to read.
+
+Or if we needed a very
+long string or number,
+
+storing it in a
+variable will let
+
+us use it throughout our code
+without typing it all out.
+
+In the previous
+example, the variable
+
+stored the string
+data, but variables can
+
+store a variety of data types.
+
+Variables have the
+data type of the object
+
+currently stored in them.
+
+If you're unsure about the
+data type stored inside
+
+of a variable, you can
+use the type function.
+
+The type function is a
+function that returns
+
+the data type of its input.
+
+Let's use the type
+function in Python.
+
+We'll start by
+creating our valuable.
+
+
+
+Then we'll add a
+line of code that
+
+includes the type function.
+
+
+
+This line asks Python
+to tell us the data
+
+type of the device_id
+variable and to assign this
+
+to a new variable
+called data_type.
+
+After this, we can print
+the data_type variable
+
+to the screen.
+
+Perfect.
+
+Python tells us that the
+value that device_id contains
+
+is a string.
+
+When working with
+variables, it's
+
+important to keep track
+of their data types.
+
+If you don't, you
+could get a type error.
+
+A type error is an
+error that results
+
+from using the wrong data type.
+
+For example, if you try to
+add a number and a string,
+
+you will get a type error,
+because Python cannot combine
+
+those two data types together.
+
+It can only add two
+strings or two numbers.
+
+Let's demonstrate a type error.
+
+
+
+First, we will use
+our device_id variable
+
+that stores a string value.
+
+
+
+Then we'll define another
+variable called number
+
+and assign an
+integer value to it.
+
+Let's add a print
+statement that outputs
+
+the sum of these variables.
+
+
+
+And then we'll run this.
+
+
+
+We ended up with an error
+because we cannot add a string
+
+to a number.
+
+Let's cover one more topic
+related to variables.
+
+Earlier we mentioned how
+variables are like containers.
+
+What they're called can change.
+
+After we define a
+variable, we can always
+
+change the object inside of it.
+
+This is called reassignment.
+
+Reassigning a variable is
+very similar to assigning it
+
+in the first place.
+
+Let's try this out and
+reassign a variable.
+
+
+
+We'll start by assigning
+the same string of h32rb17
+
+to our variable device_id.
+
+We'll also include a line of
+code to print this variable.
+
+
+
+Now let's try
+reassigning the variable.
+
+We type this variable's
+name, add an equal sign,
+
+and then add the new object.
+
+In this case, we'll
+use the string n73ab07
+
+as the new device ID.
+
+We'll also ask Python to
+print the variable again.
+
+Let's see what happens
+when we run this.
+
+Python prints two
+lines of output.
+
+The first printed statement
+came before reassignment,
+
+so it first prints
+the string of h32rb17.
+
+
+
+But the second print statement
+came after it changed.
+
+That's why the second
+output to the screen
+
+is the string n73ab07.
+
+With this code, we reassigned
+a variable with a string value
+
+to another string value.
+
+But it's also possible to
+reassign a variable to a value
+
+of another data type.
+
+For instance, we can reassign
+a variable with a string value
+
+to an integer value.
+
+Variables are an
+essential part of Python.
+
+And as we progress
+through this course,
+
+you'll become more
+familiar with them.
+
+Previously, we discussed
+how to store different data
+
+types in variables.
+
+Now we'll begin to move into
+the concept of automation
+
+so we can create exciting
+actions with code.
+
+Automation is the
+use of technology
+
+to reduce human and
+manual effort to perform
+
+common and repetitive tasks.
+
+It allows computers to
+do these tasks for us
+
+so that we may get back
+more time in our lives
+
+to do other activities.
+
+Conditional statements are
+important for automation.
+
+A conditional statement
+is a statement
+
+that evaluates code to determine
+if it meets a specified
+
+set of conditions.
+
+The keyword "if" is important
+in conditional statements.
+
+"If" starts a
+conditional statement.
+
+After this keyword, we
+then specify the condition
+
+that must be met and what
+will happen if it is.
+
+We use if statements every day.
+
+For example, if
+it's cold outside,
+
+then we'll wear a jacket.
+
+Or if it's raining,
+we'll bring an umbrella.
+
+"If" statements are structured
+with the condition we want
+
+to evaluate and the action
+that Python will perform
+
+if this condition is met.
+
+Python always evaluates if the
+condition is true or false.
+
+And if it's true, it
+performs the specific action.
+
+Let's explore an
+example of this.
+
+We'll instruct Python to print
+an account locked message
+
+any time the failed login
+attempts are greater than five.
+
+Our keyword "if" tells Python to
+start a conditional statement.
+
+After this, we indicate the
+condition we want to check for.
+
+In this case, we're checking
+if the user has more than five
+
+failed login attempts.
+
+Notice how we're
+using a variable
+
+called failed_attempts.
+
+In our complete code, we
+will have assigned a value
+
+to failed_attempts prior
+to this if statement.
+
+After this condition,
+we always place a colon.
+
+This signals that
+what follows is
+
+what we want to happen
+when the condition is met.
+
+In this case, when the user
+has more than five failed login
+
+attempts, it prints a message
+that the account is locked.
+
+In Python, this
+message should always
+
+be indented at least one
+space in order to execute only
+
+when the condition is true.
+
+It's common to call this
+first line the header
+
+and to call the actions
+that happen when
+
+the condition is met the body.
+
+This condition was
+based on a variable
+
+being greater than
+a specific number.
+
+But we can define our condition
+using a variety of operators.
+
+For example, we can also
+check if something is less
+
+than a specified value.
+
+Or we can check if it's greater
+than or equal to or less
+
+than or equal to the value.
+
+We can also compare if
+something is equal to our value.
+
+When we do this
+inside a conditional,
+
+we need to use a special syntax.
+
+It's not just the equals
+sign, but a double equals.
+
+The double equals sign is an
+important operator often used
+
+in conditional statements.
+
+A double equals evaluates
+whether two objects match.
+
+It assigns a Boolean value of
+true when they match and false
+
+when they don't.
+
+There's one more operator
+we should discuss.
+
+An exclamation mark
+followed by an equal sign
+
+represents the
+condition of not equal.
+
+This operator for not equal
+evaluates whether two objects
+
+are different.
+
+It assigns a Boolean
+value of true
+
+when they don't match and
+false when they match.
+
+Let's more closely
+investigate an example that
+
+uses the double equals sign.
+
+We'll focus on an example
+that prints an Updates Needed
+
+message when a particular
+operating system is running.
+
+Here, we've created
+a condition that
+
+checks if a device's
+operating system matches
+
+a specific string that
+identifies this operating
+
+system.
+
+To do this, we'll need to
+use the double equals sign
+
+in our condition.
+
+When it matches, our
+program will print a message
+
+that there are updates needed.
+
+The operating system
+variable is on the left
+
+of the double equals sign.
+
+The string OS 2 is on the right.
+
+If the condition
+evaluates to true,
+
+it performs the action
+that is indented
+
+in the next line of code.
+
+Here, if the operating
+system is OS 2,
+
+it will print Updates Needed.
+
+If it's false, the
+message will not print.
+
+Notice how this
+line is indented.
+
+This tells Python that
+the task depends on the if
+
+statement evaluating to true.
+
+Now let's write code that
+incorporates this conditional
+
+and get the results.
+
+Before we write the
+conditional statement,
+
+we need to assign a value to
+our operating_system variable.
+
+We'll make this value the
+same as the operating system
+
+that we'll check for
+in the conditional.
+
+Next we'll write the
+condition for our if statement
+
+and use the double
+equals sign to check
+
+if the operating_system
+variable is equivalent to OS 2.
+
+Now we'll type the
+action that will
+
+execute if the condition
+on the previous line
+
+evaluates to true.
+
+We'll tell Python to print
+the Updates Needed message.
+
+Since we set our
+operating_system variable
+
+to OS 2, the print
+statement will execute.
+
+OK.
+
+Let's run this.
+
+As expected, it
+printed Updates Needed
+
+because the value assigned to
+the operating system variable
+
+was equal to OS 2.
+
+Sometimes we want our
+conditional statements
+
+to execute another
+set of instructions
+
+in the event our first
+condition isn't true.
+
+In our example, not
+being true means
+
+that the device is
+running an operating
+
+system other than OS 2.
+
+This is when we need to
+incorporate the "else" keyword
+
+into our conditional statements.
+
+'"Else" precedes a code section
+that only evaluates when all
+
+conditions that preceded within
+the conditional statement
+
+evaluate to false.
+
+"Else" statements always
+follow an if statement and end
+
+in a colon.
+
+Let's use our
+previous conditional
+
+and add an "else"
+statement to it.
+
+We've included the
+same "if" statement.
+
+But this time, we set the
+operating system variable
+
+to contain a different
+operating system, OS 3.
+
+Because this doesn't
+match the value
+
+in the condition of
+the "if" statement,
+
+the Updates Needed
+message won't print.
+
+But we can add an
+"else" statement
+
+and tell it to do
+something else instead.
+
+We type the "else" keyword,
+followed by a colon.
+
+Then we indent the next line and
+tell it to print a No Updates
+
+Needed message.
+
+When we run this code, it
+processes the "else" statement
+
+after the "if" statement.
+
+Since our "if" statement
+will evaluate to false,
+
+it then moves on to
+the "else" instruction.
+
+Let's try it.
+
+As expected, it only prints
+the message No Updates Needed.
+
+Great work.
+
+Now we've covered how to use
+"if" and how to use "else."
+
+Using conditional statements
+allows you to incorporate logic
+
+into your code.
+
+
+
+We just learned about
+conditional statements
+
+and how they can
+develop to allow
+
+computers to make decisions.
+
+But sometimes we
+need our programs
+
+to simply count or perform
+a task over and over again.
+
+When it comes to tasks that are
+tedious, it's normal for humans
+
+to lose focus and energy.
+
+It's in situations like
+this where computers
+
+can be especially helpful.
+
+In this video, we'll
+examine how computers
+
+can perform repetitive tasks
+using iterative statements.
+
+An iterative statement
+is code that repeatedly
+
+executes a set of instructions.
+
+Iterative statements are
+also referred to as loops.
+
+Setting up a loop allows us to
+repeatedly use a line of code
+
+without having to type
+it multiple times.
+
+Before discussing the
+syntax, let's run a loop
+
+so you can experience
+what happens.
+
+Notice how this code printed
+all the numbers in the list
+
+with only one print statement.
+
+That's a loop.
+
+There are two types of
+loops we'll explore,
+
+for loops and while loops.
+
+We just ran a for loop,
+and we'll continue
+
+to focus on them in this video.
+
+Later, we'll
+explore while loops.
+
+For loops repeat code
+for a specified sequence.
+
+An example of this would
+be using a for loop
+
+to print every item in a list.
+
+For loops begin with
+the keyword "for."
+
+"For" signals the
+beginning of a for loop.
+
+Similar to conditional
+statements,
+
+iterative statements
+consist of two main parts.
+
+The parts of a loop are the
+loop header and the loop body.
+
+Let's examine the for
+loop we just ran and use
+
+that to explore these parts.
+
+The loop header is the line
+that contains the "for" keyword
+
+and ends with a colon.
+
+It tells Python to start a loop.
+
+It consists of the "for"
+keyword, a loop variable,
+
+and the sequence the loop
+will iterate through.
+
+The loop variable
+is a variable that
+
+is used to control the
+iterations of a loop.
+
+The loop variable comes
+directly after "for."
+
+A common name for
+it is the letter i,
+
+but you can give it any
+other name you want.
+
+In for loops, this
+temporary variable
+
+is only used within the
+loop and not outside of it
+
+in the rest of the code.
+
+The loop variable is
+followed by the "in" operator
+
+and the sequence the loop
+will iterate through.
+
+In this example, this sequence
+is a list containing numbers
+
+from 1 through 4.
+
+It runs each of these numbers
+through a specified action.
+
+We need to remember to put a
+colon at the end of the loop
+
+header to introduce this code.
+
+The loop body refers
+to the indented lines
+
+after the loop header.
+
+These represent the
+actions that are repeated
+
+while the loop iterates.
+
+In this case, it will
+print each number
+
+in the list, first 1,
+and then 2, and so on.
+
+Another important
+use of for loops
+
+is to repeat a specific
+process a set number of times.
+
+And this is done
+through combining it
+
+with the range function.
+
+The range function generates
+a sequence of numbers.
+
+As an example,
+range from 0 to 10
+
+sets a sequence that
+goes from 0, 1, 2,
+
+all the way up
+until the number 9.
+
+When we use range,
+we start counting
+
+at the number in the first
+position, in this case, 0.
+
+Then when we reach the number
+in the second position,
+
+it tells us where to stop.
+
+That number is excluded.
+
+So in this case, where
+the number is 10,
+
+the sequence only
+goes up until 9.
+
+An important detail
+about the range function
+
+is that if we don't
+provide a start point,
+
+it automatically starts from 0.
+
+10 represents the stop point.
+
+Since the stop
+point is excluded,
+
+the numbers included in the
+sequence start at 0 and end
+
+at 9.
+
+A sequence that starts
+at 0 and ends at 9
+
+will iterate 10 times.
+
+Let's run a for loop that
+incorporates the range
+
+function.
+
+
+
+We'll use range to ask Python
+to repeat an action 10 times.
+
+And then we'll indicate the
+action we want to repeat.
+
+This action is printing an error
+message that indicates Cannot
+
+Connect to the Destination.
+
+
+
+Let's run this.
+
+
+
+Using a for loop with
+the range function
+
+allowed us to repeat this
+same error message 10 times
+
+instead of typing it over
+and over again ourselves.
+
+In this video, we learned
+about the syntax and structure
+
+of iterative
+statements and worked
+
+with for loops as an example.
+
+In the next video,
+we'll cover another type
+
+of iterative statement,
+the while loop.
+
+
+
+Previously, we introduced
+iterative statements in Python
+
+and focused on for loops.
+
+An iterative statement
+is code that repeatedly
+
+executes a set of instructions.
+
+In this video, we'll
+explore another type
+
+of iterative statement,
+the while loop.
+
+When we used for loops,
+the code repeatedly
+
+executed based on a
+specified sequence.
+
+While loops still
+repeatedly executed,
+
+but this repetition is
+based on a condition.
+
+As long as the
+condition is true,
+
+the loop continues to execute.
+
+But when it becomes false,
+the while loop stops.
+
+This while loop, for
+example, sets a condition
+
+where the variable time must
+be less than or equal to 10.
+
+This means it will keep running
+until the variable time is
+
+greater than 10.
+
+Similar to the for loop,
+a while loop has a header.
+
+It consists of the keyword
+"while," the condition,
+
+and a colon.
+
+The while loop starts
+with the keyword "while."
+
+The keyword "while" signals
+the beginning of a while loop
+
+and is followed by
+the condition that
+
+evaluates to a Boolean value
+of either true or false.
+
+The condition contains
+the loop variable.
+
+This variable is used to control
+the number of loop iterations.
+
+However, there is an
+important distinction
+
+in the variables used
+in for and while loops.
+
+With while loops, the variable
+isn't created within the loop
+
+statement itself.
+
+Before writing the
+while loop, you
+
+need to assign the variable.
+
+Then you'll be able to
+reference it in the loop.
+
+When the condition
+containing the loop variable
+
+evaluates to true,
+the loop iterates.
+
+If it does not,
+then the loop stops.
+
+This condition will evaluate to
+true while the variable time is
+
+less than or equal to 10.
+
+Finally, the loop header
+ends with a colon.
+
+Just like a for
+loop, a while loop
+
+has an indented body that
+consists of the actions
+
+to take while the loop iterates.
+
+The intention of
+this code is to print
+
+the value of a variable
+that represents the time
+
+and increase its
+value by 2 until it
+
+becomes greater than 10.
+
+This means the first
+action in this while loop
+
+is to simply print the current
+value of the time variable.
+
+Since while loops do not include
+a sequence to iterate through,
+
+we have to explicitly define
+how the loop variable changes
+
+in the body of the while loop.
+
+For example, in
+this while loop, we
+
+increase the loop variable
+time by 2 every iteration.
+
+This is because we only want
+to print the time every two
+
+minutes.
+
+So this while loop prints out
+all even numbers less than
+
+or equal to 10.
+
+Now that we know the
+basics of while loops,
+
+let's explore a
+practical example.
+
+Imagine we have a limitation
+on how many devices
+
+a user can connect to.
+
+We can use a while loop
+to print a message when
+
+the user has reached
+their maximum number
+
+of connected devices.
+
+Let's create a
+while loop for this.
+
+Before we start
+our while loop, we
+
+need to assign values
+to two variables.
+
+First we'll set the maximum
+value of connected devices
+
+to 5.
+
+Then we'll set
+our loop variable.
+
+We'll use i for this and
+set it to a value of 1.
+
+Unlike with for loops,
+with while loops
+
+we set this variable
+outside of the loop.
+
+Next we'll create the
+header of our while loop.
+
+In this case, the condition
+is that the first variable is
+
+less than the second variable.
+
+Those variables are the loop
+variable i and max_devices.
+
+Since we know the value
+of max_devices is 5,
+
+we can understand
+that this loop will
+
+run as long as the current
+value of i is less than 5.
+
+Then we indicate what
+we want our while loop
+
+to do because this loop runs
+as long as the user can still
+
+connect to devices.
+
+
+
+We'll first have it print
+a User Can Still Connect
+
+to Additional Devices message.
+
+After this, with each iteration,
+we'll increment i by 1.
+
+When the loop repeats,
+it will use the new value
+
+of the i variable.
+
+Python will exit the loop when
+i is no longer less than 5.
+
+Let's also print a
+message when this happens.
+
+We stop indenting because
+this next action occurs
+
+outside of the loop.
+
+Then we'll print User
+Has Reached Maximum
+
+Number of Connected Devices.
+
+
+
+OK.
+
+We're ready to run this.
+
+Because of the loop,
+the first message
+
+prints a total of four times.
+
+The loop stops when the
+value of i increments to 5.
+
+At this point, it exits the loop
+and prints the second message.
+
+Wow.
+
+When you combine this
+new understanding
+
+of for and while loops
+with what you already
+
+know about conditional
+statements and variables,
+
+you have a lot of
+options in Python.
+
+Great work.
+
+Well done.
+
+You've learned about why
+security analysts use
+
+Python and the basic
+structure of a program.
+
+You're even reading some
+lines of Python code.
+
+Let's review what
+you've learned so far.
+
+You first learned about
+the basics of programming
+
+and why it's a very important
+tool for security analysts.
+
+You also learned some of
+the basic concepts of how
+
+programming languages work.
+
+You then learned to recognize
+data types in Python.
+
+We focused on the string,
+integer, float, Boolean,
+
+and list data.
+
+Next we focused on
+working with variables.
+
+You then learned all about
+conditional statements
+
+and how to check for
+logical conditions using
+
+Python statements.
+
+Lastly, we worked with
+iterative statements
+
+and discussed the two types
+of loops, for and while loops.
+
+You'll use this knowledge as
+you progress through this course
+
+and in your career as
+a security analyst.
+
+In the next section,
+we'll explore
+
+other important components of
+Python, including functions.
+
+
+
+Welcome back to
+our Python journey.
+
+In the previous
+videos, we learned all
+
+about the basics of Python.
+
+We started at the very
+beginning by understanding how
+
+security analysts use Python.
+
+We learned several
+building blocks of Python.
+
+We went into detail learning
+about data types, variables,
+
+and basic statements.
+
+Now we'll add to
+this and learn more
+
+about how to write
+effective Python scripts.
+
+We'll discover ways we can make
+our efforts more efficient.
+
+The upcoming videos
+are going to start
+
+by introducing functions, which
+are very important in Python.
+
+Functions allow us to put
+together a set of instructions
+
+that we can use again
+and again in our code.
+
+Afterwards, we're going to
+learn about Python modules
+
+and libraries, which
+include collections
+
+of functions and data types
+that we can use with Python.
+
+They help us gain
+access to functions
+
+without having to
+create them ourselves.
+
+Lastly, we're going
+to talk about one
+
+of the most important
+rules of programming,
+
+and that is code readability.
+
+We'll learn all
+about ways to make
+
+sure everyone can understand
+and work with your code.
+
+I'm excited that you've
+decided to continue your Python
+
+journey with me.
+
+So let's start learning more.
+
+
+
+As the complexity of
+our programs grow,
+
+it's also likely that we'll
+reuse the same lines of code.
+
+Writing this code multiple
+times would be time-consuming.
+
+But luckily, we have
+a way to manage this.
+
+We can use functions.
+
+A function is a
+section of code that
+
+can be reused in a program.
+
+We already learned one function
+when we worked with print
+
+and used it to output
+specified data to the screen.
+
+For example, we
+printed Hello Python.
+
+There are many other functions.
+
+Sometimes we need to automate
+a task that might otherwise
+
+be repetitive if
+we did it manually.
+
+Previously, we compared all
+the key Python components
+
+to elements of a kitchen.
+
+We compared data types
+to categories of food.
+
+There are differences in how
+we handle vegetables and meat.
+
+And likewise, there
+are differences in how
+
+we handle different data types.
+
+We then discussed how variables
+are like the containers
+
+you put food in after a meal.
+
+What they hold can change.
+
+As far as functions,
+we can think about them
+
+like a dishwasher.
+
+If you aren't
+using a dishwasher,
+
+you'll spend a lot of time
+washing each dish separately.
+
+But a dishwasher automates this
+and lets you wash everything
+
+at once.
+
+Similarly, functions
+improve efficiency.
+
+They perform repetitive
+activities within a program
+
+and allow it to
+work effectively.
+
+Functions are made to be
+reused in our programs.
+
+They consist of
+small instructions
+
+and can be called upon
+any number of times
+
+and from anywhere
+in our programs.
+
+Another benefit to
+functions is that if we ever
+
+had to make changes to them, we
+can make those changes directly
+
+in the function and they'll be
+applied everywhere we use them.
+
+This is much better than
+making the same changes
+
+in many different
+places within a program.
+
+The print function is an
+example of a built-in function.
+
+Built-in functions are functions
+that exist within Python
+
+and can be called directly.
+
+They are available
+to us by default.
+
+We can also create
+our own functions.
+
+User-defined functions
+are functions
+
+that programmers design
+for their specific needs.
+
+Both types of functions are like
+mini programs within a larger
+
+program.
+
+They make working in Python much
+more effective and efficient.
+
+Let's continue learning
+more about them.
+
+
+
+Let's start our exploration
+of user-defined functions
+
+by creating and then running
+a very simple function.
+
+The first thing we need to
+do is define our function.
+
+When we define a
+function, we basically
+
+tell Python that it exists.
+
+The "def" keyword
+is needed for this.
+
+Def is placed before a function
+name to define a function.
+
+Let's create a function
+that greets employees
+
+after they log in.
+
+First we'll comment on what
+we want to do with this code.
+
+We want to define a function.
+
+Now we'll go to a new
+line and use the keyword
+
+"def" to name our function.
+
+We'll call it greet_employee.
+
+Let's look at this syntax
+a little more closely.
+
+After our keyword "def"
+and the function name,
+
+we place parentheses.
+
+Later, we'll explore
+adding information
+
+inside the parenthesis.
+
+But for this simple function,
+we don't need to add anything.
+
+Also, just like we did with
+conditional and iterative
+
+statements, we add a colon
+at the end of this header.
+
+After the colon, we'll indicate
+what the function will do.
+
+In our case, we want the
+function to output a message
+
+once the employee logs in.
+
+So let's continue
+creating our function
+
+and tell Python to
+print this string.
+
+This line is indented because
+it's part of this function.
+
+So what happens if
+we run this code?
+
+Does it print our message?
+
+Let's try this.
+
+It doesn't.
+
+That's because you also
+have to call your function.
+
+You may not realize
+it, but you already
+
+have experienced
+calling functions.
+
+Print is a built-in function
+that we've called many times.
+
+So to call greet_employee,
+we'll do something similar.
+
+Let's go with a new line.
+
+We'll add another comment
+because now our purpose
+
+is to call our function.
+
+And then we'll call the
+greet_employee function.
+
+We'll run it again.
+
+This time, it printed
+our welcome message.
+
+Great work.
+
+We've now defined and
+called a function.
+
+This was a simple function.
+
+We're going to learn
+something next that
+
+will add to the complexity
+of the functions you write.
+
+Previously, we defined and
+called our first function.
+
+It didn't require
+any information
+
+from outside the function.
+
+But other functions might.
+
+This means we need to talk about
+using parameters in functions.
+
+In Python, a
+parameter is an object
+
+that is included in a
+function definition for use
+
+in that function.
+
+Parameters are accepted
+into a function
+
+through the parentheses
+after a function name.
+
+The function that we
+created in the last video
+
+isn't taking in any parameters.
+
+Now let's revisit
+another function called
+
+range that does use parameters.
+
+If you recall,
+the range function
+
+generates a sequence of
+numbers from a start point
+
+to the value before
+the stop point.
+
+Therefore, the range
+does include parameters
+
+for the start and stop indices
+that each accept an integer
+
+value.
+
+For instance, it could
+accept integers 3 and 7.
+
+This means the sequence it
+generates will run from 3 to 6.
+
+In our previous example,
+we wrote a function
+
+that displayed a welcome
+message when someone logged in.
+
+It would be even more welcoming
+if we included the employee's
+
+name with the message.
+
+Let's define a function
+with a parameter
+
+so we can greet
+employees by name.
+
+When we define our
+function, we'll
+
+include the name
+of the parameter
+
+that our function depends on.
+
+We place this parameter,
+the name variable,
+
+inside the parenthesis.
+
+The rest of the
+syntax stays the same.
+
+Now, let's go to the
+next line and indent
+
+so that we can tell Python what
+we want this function to do.
+
+We want it to print
+a message that
+
+welcomes the employee
+using the name that's
+
+passed into the function.
+
+Bringing this variable
+into our print statement
+
+requires a few considerations.
+
+Like before, we start
+with the welcome message
+
+we want to print.
+
+In this case, though, we're
+not stopping our message
+
+after we tell them
+they are logged in.
+
+We want to continue and add the
+employee's name to the message.
+
+That's why we're placing a
+comma after You're Logged In,
+
+and then adding
+the name variable.
+
+Since this is a variable
+and not a specific string,
+
+we don't place it
+in quotation marks.
+
+Now that our function
+is set up, we're
+
+ready to call it with
+a specific argument
+
+that we want to pass in.
+
+In Python, an
+argument is the data
+
+brought into a function
+when it is called.
+
+For example, earlier
+when we passed 3 and 7
+
+into the range function,
+these were arguments.
+
+In our case, let's
+imagine we want
+
+to greet an employee
+named Charley Patel.
+
+We'll call our greet_employee
+function with this argument.
+
+And when we run
+this, Charley Patel
+
+gets a personalized
+welcome message.
+
+In this example, we only have
+one parameter in our function.
+
+But we can have more.
+
+Let's explore an
+example of this.
+
+Maybe instead of a
+single name parameter,
+
+we have a parameter
+for first name
+
+and second parameter
+for last name.
+
+If so, we would need to
+adjust the code like this.
+
+First, when we
+define the function,
+
+we include both parameters and
+separate them with a comma.
+
+Then when we call it, we
+also include two arguments.
+
+This time, we're
+greeting someone
+
+with the first name of Kiara and
+with the last name of Carter.
+
+These are also
+separated by a comma.
+
+Let's run this and
+welcome Kiara Carter.
+
+As we just explored, using
+more than one parameter just
+
+requires a few adjustments.
+
+Great work in this video.
+
+We learned a lot about working
+with parameters in a function.
+
+This understanding
+is something you'll
+
+need as you continue to
+write Python scripts.
+
+We previously learned how we can
+pass arguments into a function.
+
+We can do more than pass
+information into a function.
+
+We can also send
+information out of one.
+
+Return statements
+allow us to do this.
+
+A return statement
+is a Python statement
+
+that executes inside a
+function and sends information
+
+back to the function called.
+
+This ability to send
+information back from a function
+
+is useful to a security
+analyst in various ways.
+
+As one example, an analyst
+might have a function
+
+that checks whether
+someone is allowed
+
+to access a particular
+file and will
+
+return a Boolean value of true
+or false to the larger program.
+
+We'll explore another example.
+
+Let's create a function related
+to analyzing login attempts.
+
+Based on the
+information it takes in,
+
+this function will compute the
+percentage of failed attempts
+
+and return this percentage.
+
+The program could
+use this information
+
+in a variety of ways.
+
+For example, it might be used
+to determine whether or not
+
+to lock an account.
+
+So let's get started and learn
+how to return information
+
+from a function.
+
+
+
+Just like before, we start
+by defining our function.
+
+We'll name it calculate_fails.
+
+And we'll set two parameters
+related to login attempts,
+
+one for total attempts and
+one for failed attempts.
+
+Next, we'll tell Python what
+we want this function to do.
+
+We want this function
+to store the percentage
+
+of failed attempts in a
+variable called fail_percentage.
+
+We need to divide
+failed_attempts
+
+by total_attempts to
+get this percentage.
+
+So far, this is similar to
+what we learned previously.
+
+But now, let's learn how to
+return the fail_percentage.
+
+To do this, we need to
+use the key word "return."
+
+"Return" is used to return
+information from a function.
+
+In our case, we'll return the
+percentage we just calculated.
+
+So after the keyword return,
+we'll type fail_percentage.
+
+This is our variable that
+contains this information.
+
+Now we're ready to
+call this function.
+
+We'll calculate the
+percentage for a user
+
+who has logged in four times
+with two failed attempts.
+
+So our arguments are 4 and 2.
+
+When we run this, the function
+returns the percentage
+
+of failed attempts.
+
+It's 0.5, or 50%.
+
+But in some Python
+environments, this
+
+might not be printed
+to the screen.
+
+We cannot use a specific
+variable named fail_percentage
+
+outside of the function.
+
+So in order to use
+this information
+
+in another part
+of the program, we
+
+would need to return the
+value from the function
+
+and assign it to a new variable.
+
+Let's check this out.
+
+This time, when the
+function is called,
+
+the value that's returned is
+stored in a variable called
+
+percentage.
+
+Then we can use this
+variable in additional code.
+
+For example, we can
+write a conditional
+
+that checks if the
+percentage of failed attempts
+
+is greater than or equal to 50%.
+
+When this condition
+is met, we can
+
+tell Python to print an
+Account Locked message.
+
+Let's run this code.
+
+And this time, the percentage
+isn't returned to the screen.
+
+Instead, we get the
+Account Locked message.
+
+Coming up, we'll
+discuss more functions.
+
+But this time, we'll go over
+a few that are ready for use
+
+and built into Python.
+
+
+
+Now that we know how to
+create our own functions,
+
+let's also explore a few of
+Python's built-in functions.
+
+As we discussed previously,
+built-in functions
+
+are functions that
+exist within Python
+
+and can be called directly.
+
+Our only job is to call
+them by their name.
+
+And we already described a
+few throughout the course,
+
+for example, Python's
+print and type functions.
+
+Let's quickly review those
+two built-in functions
+
+before learning about new ones.
+
+First, print outputs a
+specified object to the screen.
+
+And then the type function
+returns the data type
+
+of its input.
+
+Previously, we've been using
+functions independently
+
+from one another.
+
+For example, we asked
+Python to print something.
+
+Or we asked Python to return
+the data type of something.
+
+As we begin to explore
+building functions,
+
+we'll often need to use
+multiple functions together.
+
+We can do this by
+passing one function
+
+into another as an argument.
+
+For example, in
+this line of code,
+
+Python first returns the data
+type of Hello as a string.
+
+Then this return value is
+passed into the print function.
+
+This means the
+data type of string
+
+will be printed to the screen.
+
+Print and type are
+not the only functions
+
+you'll see used
+together in this way.
+
+In all cases, the general
+syntax is the same.
+
+The inner function
+is processed first.
+
+And then its return value is
+passed to the outer function.
+
+Let's consider another
+aspect of working
+
+with built-in functions.
+
+When working with
+functions, you have
+
+to understand what their
+expected inputs and outputs
+
+are.
+
+Some functions only
+expect specific data types
+
+and will return a type error
+if you use the wrong one.
+
+Other functions need a
+specific amount of parameters,
+
+or return a different data type.
+
+The print function, for example,
+can take in any data type
+
+as its input.
+
+It can also take in any number
+of parameters, even ones
+
+with different data types.
+
+Let's explore the input and
+output of the print function.
+
+We'll enter three arguments.
+
+The first contains string data.
+
+Then a comma is used to separate
+this from the second argument.
+
+This second argument
+is an integer.
+
+Finally, after another
+comma, our third argument
+
+is another string.
+
+Now let's run this code.
+
+Perfect.
+
+This printed out
+just as expected.
+
+The type function also
+takes in all data types.
+
+But it only accepts
+one parameter.
+
+Let's explore this
+input and output too.
+
+Our first line of
+code will first
+
+determine the data type
+of the word "security"
+
+and then pass what it returns
+into a print function.
+
+In the second line
+of code, we'll
+
+do the same thing with
+the value of 73.2.
+
+Now let's run this
+and see what happens.
+
+Python first returns output
+that tells us that the word
+
+"security" is string data.
+
+Next, it returns
+another line of output
+
+that tells us that
+73.2 is float data.
+
+Now we know what to
+consider before using
+
+a built-in function.
+
+We have to know exactly how
+many parameters it requires
+
+and what data types they can be.
+
+We also need to know what
+kind of output it produces.
+
+Let's learn a couple of
+new built-in functions
+
+and think about this.
+
+We'll start with max.
+
+The max function returns
+the largest numeric input
+
+passed into it.
+
+It doesn't have a defined number
+of parameters that it accepts.
+
+Let's explore the max function.
+
+We'll pass three arguments into
+max in the form of variables.
+
+So let's first define
+those variables.
+
+We'll set the value of a
+to 3, b to 9, and c to 6.
+
+Then we'll pass these
+variables into the max function
+
+and print them.
+
+Let's run this.
+
+
+
+It tells us the highest
+value among those is 9.
+
+Now let's study one
+more built-in function,
+
+the sorted function.
+
+The sorted function sorts
+the components of a list.
+
+This function can be very
+useful in a security setting.
+
+When working with lists,
+we often have to sort them.
+
+With lists of
+numbers, we sort them
+
+from smallest to largest
+or the other way around.
+
+With lists of string
+data, we might need
+
+to sort them alphabetically.
+
+Imagine you have a list
+that contains usernames
+
+in your organization,
+and you wanted
+
+to sort them alphabetically.
+
+Let's use Python sorted
+function for this.
+
+We'll specify our list through
+our variable name usernames.
+
+In this list, we'll include
+all of the usernames
+
+we want to sort.
+
+Now we'll use the
+sorted function
+
+to sort these names by passing
+the usernames variable into it.
+
+And then we'll pass its output
+into the print statement
+
+so it can be displayed
+on the screen.
+
+And when we run it,
+everything is now in order.
+
+These are just a few of
+the built-in functions
+
+available for your use.
+
+As you work more
+in Python, you'll
+
+become familiar with others that
+can help you in your programs.
+
+
+
+Hello, again.
+
+Previously, we learned about
+built-in functions in Python.
+
+Built-in functions come standard
+with every version of Python
+
+and consist of functions
+such as print, type, max,
+
+and many more.
+
+To access additional
+pre-built functions,
+
+you can import a library.
+
+A library is a
+collection of modules
+
+that provide code users can
+access in their programs.
+
+All libraries are generally
+made up of several modules.
+
+A module is a Python
+file that contains
+
+additional functions,
+variables, classes,
+
+and any kind of runnable code.
+
+Think of them as saved
+Python files that contain
+
+useful functionality.
+
+Modules may be made up of
+small and simple lines of code,
+
+or could be complex
+and lengthy in size.
+
+Either way, they help
+save programmers time
+
+and make code more readable.
+
+Now let's focus specifically
+on the Python Standard Library.
+
+The Python Standard Library
+is an extensive collection
+
+of usable Python code that often
+comes packaged with Python.
+
+One example of a module from
+the Python Standard Library
+
+is the re module.
+
+This is a useful module
+for a security analyst
+
+when they are tasked
+with searching
+
+for patterns in log files.
+
+Another module is
+the csv module.
+
+It allows you to work
+efficiently with CSV files.
+
+The Python Standard Library also
+contains glob and os modules
+
+for interacting with
+the command line,
+
+as well as time and datetime
+for working with timestamps.
+
+These are just a few of the
+modules in Python Standard
+
+Library.
+
+In addition to what's always
+available through the Python
+
+Standard Library, you can also
+download external libraries.
+
+A couple of examples
+are Beautiful Soup
+
+for parsing HTML website
+files, and NumPy for arrays
+
+and mathematical computations.
+
+These libraries will assist
+you as a security analyst
+
+in network traffic analysis, log
+file parsing, and complex math.
+
+Overall, Python
+libraries and modules
+
+are useful because they provide
+pre-programmed functions
+
+and variables.
+
+This saves time for the user.
+
+I encourage you to explore some
+of the libraries and modules we
+
+discuss here and the ways
+they might be helpful to you
+
+as you work in Python.
+
+Welcome back.
+
+One of the advantages
+to programming in Python
+
+is that it's a very
+readable language.
+
+It also helps that
+the Python community
+
+shares a set of guidelines that
+promote clean and neat code.
+
+These are called style guides.
+
+A style guide is a
+manual that informs
+
+the writing, formatting,
+and design of documents.
+
+As it relates to
+programming, the style guides
+
+are intended to help programmers
+follow similar conventions.
+
+The PEP 8 style
+guide is a resource
+
+that provides stylistic
+guidelines for programmers
+
+working in Python.
+
+PEP is short for Python
+Enhancement Proposals.
+
+PEP 8 provides programmers with
+suggestions related to syntax.
+
+They are not mandatory, but
+they help create consistency
+
+among programmers to make
+sure that others can easily
+
+understand our code.
+
+It's essentially
+based on the principle
+
+that code is read much more
+often than it's written.
+
+This is a great
+resource for anyone
+
+who wants to learn how to
+style and format their Python
+
+code in a manner consistent
+with other programmers.
+
+For example, PEP 8
+discusses comments.
+
+A comment is a note programmers
+make about the intentions
+
+behind their code.
+
+They are inserted
+in computer programs
+
+to indicate what the
+code is doing and why.
+
+PEP 8 gives specific
+recommendations
+
+like making your comments clear
+and keeping them up-to-date
+
+when the code changes.
+
+Here's an example of
+code without a comment.
+
+The person who wrote it
+might know what's going on.
+
+But what about others
+who need to read it?
+
+They might not
+understand the context
+
+behind the
+failed_attempts variable
+
+and why it prints Account
+Locked if it's greater than 5.
+
+And the original
+writer might need
+
+to revisit this
+code in the future,
+
+for example, to debug
+the larger program.
+
+Without a comment, they
+would also be less efficient.
+
+But in this example,
+we've added a comment.
+
+Other readers can
+quickly understand
+
+what our program and
+its variables are doing.
+
+Comments should be short
+and right to the point.
+
+Next, let's talk about another
+important aspect of code
+
+readability, indentation.
+
+Indentation is a space
+added at the beginning
+
+of a line of code.
+
+This both improves readability
+and ensures that the code
+
+is executed properly.
+
+There are instances when you
+must indent lines of code
+
+to establish connections
+with other lines of code.
+
+This groups the indented
+lines of code together
+
+and establishes a connection
+with a previous line of code
+
+that isn't indented.
+
+The body of a
+conditional statement
+
+is one example of this.
+
+We need to make sure this
+print statement executes only
+
+when the condition is met.
+
+Indenting here provides
+this instruction to Python.
+
+If the print statement
+were not indented,
+
+Python would execute
+this print statement
+
+outside of the conditional
+and it would always print.
+
+This would be
+problematic because you
+
+would get a message
+that updates are
+
+needed even if they are not.
+
+To indent, you must
+add at least one space
+
+before a line of code.
+
+Typically programmers add two to
+four spaces for visual clarity.
+
+The PEP 8 style guide
+recommends four spaces.
+
+At my first engineering
+job, I wrote a script
+
+to help validate and
+launch firewall rules.
+
+Initially, my
+script worked well.
+
+But it became hard
+to read a year later
+
+when we were trying to
+expand its functionality.
+
+My programming knowledge
+and coding style
+
+had evolved over that
+year, as had the coding
+
+practices of my teammates.
+
+Our organization did not
+use a coding style guide
+
+at that time.
+
+So our codes were very
+different, hard to read,
+
+and did not scale well.
+
+This caused a lot of challenges
+and required additional work
+
+to fix.
+
+Ensuring that the code is
+readable and can be modified
+
+over time, it's why it's
+important for security
+
+professionals to adhere
+to coding style guides
+
+and why the style guides are
+so important for organizations
+
+to utilize.
+
+The ability to
+write readable code
+
+is key when working in Python.
+
+As we head into the
+next part of our course,
+
+we'll continue to develop
+effective code practices
+
+for better readability.
+
+
+
+Great work on making it this
+far in the Python course.
+
+You put in a lot
+of work and effort
+
+towards learning more about
+how you can use Python
+
+effectively and efficiently.
+
+Let's quickly recap
+the concepts you
+
+learned throughout the videos.
+
+First, we started by
+understanding the role
+
+of functions in Python.
+
+They can save you a lot of time.
+
+You learned how to
+incorporate built-in functions
+
+and how to develop your own
+functions to meet your needs.
+
+We then shifted our focus
+towards modules and libraries,
+
+which gave us access to a
+lot more functions than those
+
+built into Python.
+
+Lastly, we move to learning
+about code readability and best
+
+practices to write clean,
+understandable code.
+
+With these
+understandings, you're
+
+ready to learn how
+powerful Python can really
+
+be for task automation and how
+it can help you going forward
+
+as a security analyst.
+
+Thank you for taking the time to
+go through this course with me.
+
+I'll meet you in
+the next videos.
+
+
+
+As a security analyst, you'll
+work with a lot of data.
+
+Being able to develop solutions
+for managing this data
+
+is very important.
+
+What we're about to learn in
+Python will help you with that.
+
+Previously, we set
+foundations for what we're
+
+going to do in this section.
+
+We learned all about
+data types and variables.
+
+We also covered conditional
+and iterative statements.
+
+We learned about
+built-in functions
+
+and even created
+our own functions.
+
+Here, we'll build on that
+in a few different ways.
+
+First, you'll learn more about
+working with strings and lists.
+
+We'll expand the ways that you
+can work with these data types,
+
+including extracting characters
+from strings or items
+
+from lists.
+
+Our next focus is on
+writing algorithms.
+
+You'll consider a
+set of rules that
+
+can be applied in
+Python to solve
+
+a security-related problem.
+
+And finally, we'll
+further expand
+
+the ways we can search for
+strings when we explore
+
+using regular expressions.
+
+We're going to
+have a lot of fun,
+
+and you'll start writing
+some really interesting code
+
+in Python.
+
+I can't wait to get started.
+
+Knowing how to work with string
+data in security is important.
+
+For example, you might find
+yourself working with usernames
+
+to find patterns in
+login information.
+
+We're going to revisit
+the string data type
+
+and learn how to work
+with it in Python.
+
+First, let's have a quick
+refresher on strings.
+
+We defined string data
+as data consisting
+
+of an ordered sequence
+of characters.
+
+In Python, strings are written
+in between quotation marks.
+
+It's OK to use either double
+or single quotation marks.
+
+But in this course, we've been
+using double quotation marks.
+
+As examples, we have the strings
+Hello, 123, and Number 1.
+
+We also previously
+covered variables.
+
+Here, the variable
+my_string is currently
+
+storing the string security.
+
+You can also create a string
+from another data type,
+
+such as an integer or a float.
+
+To do that, we need to introduce
+a new built-in function,
+
+the string function.
+
+The string function
+is a function
+
+that converts the input
+object into a string.
+
+Converting objects
+to strings allows
+
+us to perform tasks that are
+only possible for strings.
+
+For example, we might
+convert an integer
+
+into a string to remove elements
+from it or to reorder it.
+
+Both are difficult for
+an integer data type.
+
+Let's practice converting
+an integer to a string.
+
+We'll apply the string
+function to the integer 123.
+
+Now, the valuable
+new_string contains
+
+a string of three
+characters, 1, 2, and 3.
+
+Let's print its type to check.
+
+We'll run it.
+
+Perfect.
+
+It tells us that we
+now have a string.
+
+Awesome.
+
+So far, we know different ways
+to create and store a string.
+
+Now let's explore how to perform
+some basic string operations.
+
+Our first example is
+the length function.
+
+The length function
+is a function
+
+that returns the number
+of elements in an object.
+
+Using it on a string tells
+us how many characters
+
+the string has.
+
+Earlier in the program, we
+learned that IP addresses have
+
+two versions, IPv4 or IPv6.
+
+IPv4 addresses have a
+maximum of 15 characters.
+
+So a security professional
+might use the length function
+
+to check if an IPv4
+address is valid.
+
+If its length is greater
+than 15 characters,
+
+then we'd know that it's
+an invalid IPv4 address.
+
+Let's use this function to print
+the length of the string Hello.
+
+We'll nest the length function
+within the print function,
+
+because we want
+to first calculate
+
+the length of this string and
+then print it to the screen.
+
+OK.
+
+Let's run this and check out how
+many characters Python counts.
+
+The output is 5, one for each
+letter in the world Hello.
+
+We can also use the addition
+operator on the strings.
+
+This is called
+string concatenation.
+
+String concatenation
+is the process
+
+of joining two strings together.
+
+For example, we can add
+the strings Hello and World
+
+together.
+
+To concatenate strings, we
+can use the plus symbol.
+
+After we run it, we get
+Helloworld with no spaces
+
+in between the two strings.
+
+It's important to note
+that some operators don't
+
+work for strings.
+
+For example, you cannot use a
+minus sign to subtract the two
+
+strings.
+
+Finally, we're going to
+talk about string methods.
+
+A method is a function that
+belongs to a specific data
+
+type.
+
+So using string
+methods on another data
+
+type, like an integer,
+would cause an error.
+
+Unlike other functions, methods
+appear after the string.
+
+Two common string methods
+are the upper and the lower
+
+methods.
+
+The upper method returns
+a copy of the string
+
+in all uppercase letters.
+
+Let's apply the upper
+method to the string Hello.
+
+We'll place this inside
+of a print function
+
+to output it to the screen.
+
+Let's focus on the
+unique syntax of methods.
+
+After our string Hello,
+we place a period, or dot,
+
+and then specify the
+method we want to use.
+
+Here, that's upper.
+
+OK.
+
+Now we're ready to run this.
+
+HELLO is printed to the screen
+in all uppercase letters.
+
+Similarly, the
+lower method returns
+
+a copy of the string in
+all lowercase letters.
+
+Let's apply the lower
+method on the Hello string.
+
+Remember that we need to put
+the string and the method inside
+
+of a print function
+to output the results.
+
+And now we have
+the string printed
+
+in all lowercase letters.
+
+Coming up, we're going to
+learn a lot more about strings,
+
+like indexing and
+splitting strings.
+
+I'm looking forward
+to meeting you there.
+
+In security, there are
+a variety of reasons
+
+we might need to search
+through a string.
+
+For example, we
+might need to locate
+
+a username in a security log.
+
+Or if we learn that a certain
+IP address is associated
+
+with malware, we might search
+for this address in a network
+
+log.
+
+And the first step in being
+able to use Python in these ways
+
+is learning about the index
+of characters in a string.
+
+The index is a number assigned
+to every element in a sequence
+
+that indicates its position.
+
+In this video, we are
+discussing strings,
+
+so the index is the position of
+each character in the string.
+
+Let's just start with
+the string HELLO.
+
+Every character in the
+string is assigned an index.
+
+In Python, we start
+counting indices from 0.
+
+So the character H has an index
+of 0, and E has an index of 1,
+
+and so on.
+
+Let's stick these into Python
+and practice using indices.
+
+Placing an index in square
+brackets after a string
+
+returns the character
+at that index.
+
+Let's place the index 1 in
+square brackets after HELLO
+
+and run it.
+
+This returned the character E.
+Remember, indices start at 0.
+
+So an index of 1 isn't the
+first character in the word.
+
+But what if we wanted to return
+more than just one character?
+
+We can extract a
+larger part of a string
+
+by specifying a set of indices.
+
+And this is called a slice.
+
+When taking a slice
+from a string,
+
+we specify where
+the slice starts
+
+and where the slice ends.
+
+So we provide two indices.
+
+The first index is
+the beginning, which
+
+is included in the output.
+
+The second index is
+the end, but it's not
+
+included in the final output.
+
+Instead, Python stops
+the slice at the element
+
+before the second index.
+
+For example, if we wanted
+to take the letters
+
+E, L, L from HELLO, we
+would start the interval
+
+from the index 1.
+
+But we'd end before the index 4.
+
+Let's try this example
+and extract a slice
+
+from a string in Python.
+
+Let's type in the
+string and take
+
+the slices starting at index
+1 and ending before index 4.
+
+Now let's run the code
+and examine the output.
+
+And there's the slice we wanted.
+
+Now that we know how to
+describe the location
+
+of a character in
+a string, let's
+
+learn how to search in a string.
+
+To do this, we need to
+use the index method.
+
+The index method finds
+the first occurrence
+
+of the input in a string
+and returns its location.
+
+Let's practice using the
+index method in Python.
+
+Let's say we want
+to use the index
+
+method to find the character
+E in the string HELLO.
+
+We'll locate the first instance
+of the character E. Let's
+
+examine this line
+in more detail.
+
+After writing the string
+and the index method,
+
+we use the character
+we want to find
+
+as the argument of
+the index method.
+
+Remember, the strings in
+Python are case-sensitive,
+
+so we need to make sure we
+use the appropriate case
+
+with the index method.
+
+Let's run this code now.
+
+This returned the number 1.
+
+This is because E has
+an index value of 1.
+
+Now let's explore an example
+where a character repeats
+
+multiple times in a string.
+
+Let's try searching
+for the character
+
+L. We start with similar code
+as before, passing the argument
+
+L instead of E to
+the index method.
+
+Now let's run this code
+and investigate the result.
+
+The result is the index 2.
+
+This tells us that
+the method only
+
+identified the first
+occurrence of the character
+
+L and not the second.
+
+This is an important
+detail to notice when
+
+working with the index method.
+
+As a security analyst, learning
+how to work with indices
+
+allows you to find
+certain parts in a string.
+
+For example, if you need to find
+the location of the @ symbol
+
+in an email, you can
+use the index method
+
+to find what you're looking
+for with one line of code.
+
+Now let's turn our attention
+to an important property
+
+of strings.
+
+Have you ever heard
+the expression
+
+some things never change?
+
+It might be said about
+the comfortable feeling
+
+you have with a good friend,
+even when you haven't seen them
+
+for a long time.
+
+Well in Python, we can also
+say this about strings.
+
+Strings are immutable.
+
+In Python, immutable means
+that it cannot be changed after
+
+it's created and
+assigned a value.
+
+Let's break this
+down with an example.
+
+Let's assign the string HELLO
+to the variable my_string.
+
+Now, if we want to change
+the character E to an A,
+
+so my_string has
+the value H-A-L-L-O,
+
+then we might be inclined
+to use index notation.
+
+But here, we get an error.
+
+My string is immutable.
+
+So we cannot make
+changes like this.
+
+And there you have it.
+
+You just learned how to
+index and slice into strings.
+
+You've also seen that
+strings are immutable.
+
+So you cannot reassign
+characters after a string has
+
+been defined.
+
+Coming up, we'll learn
+about list operations
+
+and see that lists can be
+changed with index notation.
+
+Meet you there.
+
+Another data type we discussed
+previously is the list.
+
+Lists are useful
+because they allow
+
+you to store multiple pieces
+of data in a single variable.
+
+In the security
+profession, you will
+
+work with a variety of lists.
+
+For example, you may have
+a list of IP addresses
+
+that have accessed a network.
+
+And another list
+might hold information
+
+on applications that are blocked
+from running on the system.
+
+Let's recap how to
+create a list in Python.
+
+In this case, the
+items in our list
+
+are the letters a through e.
+
+We separate them by
+commas and surround them
+
+with square brackets.
+
+We can also assign
+our list to a variable
+
+to make it easier to use later.
+
+Here, we've named
+our variable my_list.
+
+When we access specific
+elements from lists,
+
+we use syntax similar to when
+we access the specific elements
+
+from strings.
+
+We place its index
+value in brackets
+
+after the variable
+that stores the list.
+
+So this would access the
+second item in the list.
+
+This is because in Python, we
+start counting the elements
+
+in a list at 0 and not at 1.
+
+So the index for the
+first element is 0,
+
+and the index for the
+second element is 1.
+
+Let's try extracting some
+elements from a list.
+
+We'll extract the second
+element by putting 1
+
+in brackets after the variable.
+
+We'll place this in a print
+function to output the results.
+
+And after we run it, Python
+outputs the letter b.
+
+Similar to strings, we
+can also concatenate lists
+
+with the plus sign.
+
+List concatenation is
+combining two lists into one
+
+by placing the elements
+of the second list
+
+directly after the
+elements of the first list.
+
+Let's work with this in Python.
+
+Let's concatenate two lists.
+
+First, we define the same list
+as in the previous example
+
+and store it in the
+variable my_list.
+
+
+
+Now, let's define
+an additional list
+
+with the numbers 1 through 4.
+
+Finally, let's concatenate
+the two lists with a plus sign
+
+and print out the result.
+And when we run it,
+
+we have a final
+concatenated list.
+
+Having discussed
+the similarities,
+
+let's now explore
+the differences
+
+between lists and strings.
+
+We mentioned earlier that
+strings are immutable,
+
+meaning after they are defined,
+they cannot be changed.
+
+Lists, on the other hand,
+do not have this property.
+
+And we can freely change,
+add, and remove list values.
+
+So for example, if we have a
+list of malicious IP addresses,
+
+then every time a new malicious
+IP address is identified,
+
+we can easily add
+it to the list.
+
+Let's first try changing
+a specific element
+
+in a list in Python.
+
+We'll start with the list
+used in the previous example.
+
+To change an element
+in a list, we
+
+combine what we learned
+about bracket notation
+
+with what we learned
+about variable assignment.
+
+Let's change the second
+element in my_list, which is
+
+the string b, to the number 7.
+
+We place the object we want to
+change on the left-hand side
+
+of the variable assignment.
+
+In this case, we'll change
+the second element in my_list.
+
+Then we place an equal sign
+to indicate we are reassigning
+
+this element of the list.
+
+Finally, we place the
+object to take its place
+
+on the right-hand side.
+
+Here, we'll reassign the second
+list element to a value of 7.
+
+Now let's print out the
+list and run the code
+
+to examine the change.
+
+Perfect.
+
+The letter b is now
+changed to the number 7.
+
+Now let's take a look at methods
+for inserting and removing
+
+elements in lists.
+
+The first method we'll
+work with in this video
+
+is the insert method.
+
+The insert method adds an
+element in a specific position
+
+inside a list.
+
+The method takes two arguments.
+
+The first is the position
+we're adding the element to,
+
+and the second is the
+element we want to add.
+
+Let's use the insert method.
+
+We'll start with
+the list we defined
+
+in our my_list variable.
+
+Then we type my_list.insert
+and pass in two arguments.
+
+The first argument
+is the position
+
+where we want to insert
+the new information.
+
+In this case, we want
+to insert into index 1.
+
+The second argument
+is the information
+
+we want to add to the list,
+in this case, the integer 7.
+
+Now let's print my_list.
+
+Our list still begins with a,
+the element with an index of 0.
+
+And now, we have the integer
+7 in the next position,
+
+the position represented
+with an index of 1.
+
+Notice that the letter b, which
+was originally at index 1,
+
+did not get replaced like
+when we used bracket notation.
+
+With the insert method,
+every element beyond index 1
+
+is simply shifted
+down by one position.
+
+The index of b is now 2.
+
+Sometimes we might want to
+remove an element that is
+
+no longer needed from a list.
+
+To do this, we can
+use the remove method.
+
+The remove method removes
+the first occurrence
+
+of a specific element in a list.
+
+Unlike insert, the argument of
+remove is not an index value.
+
+Instead, you directly type the
+element you want to remove.
+
+The remove method removes
+the first instance of it
+
+in the list.
+
+Let's use the remove
+method to delete the letter
+
+d from our list.
+
+We'll type the name of
+our variable, my_list,
+
+then add the remove method.
+
+We want to remove
+d from this list.
+
+So we will place it in
+quotation marks as our argument.
+
+Then we'll print my_list.
+
+And let's run this.
+
+Perfect.
+
+D has now been
+removed from the list.
+
+Just like with strings, being
+able to search through lists
+
+is a necessary skill
+for security analysts.
+
+I'm looking forward to expanding
+our understanding as we
+
+move forward in this course.
+
+
+
+In our everyday lives, we
+frequently follow rules
+
+for solving problems.
+
+As a simple example, imagine
+you want a cup of coffee.
+
+If you've made
+coffee many times,
+
+then you likely follow
+a process to make it.
+
+First, you grab
+your favorite mug.
+
+Then you pour water
+into the coffee maker
+
+and add your coffee grounds.
+
+You press the start button
+and wait a few minutes.
+
+Finally, you enjoy your
+fresh cup of coffee.
+
+Even if you have a different
+approach to making coffee
+
+or don't drink coffee
+at all, you likely
+
+follow a set of
+rules for completing
+
+similar everyday tasks.
+
+When you complete
+these routine tasks,
+
+you're following an algorithm.
+
+An algorithm is a set of
+rules that solve a problem.
+
+In more detail, an
+algorithm is a set
+
+of steps that take an
+input from a problem,
+
+uses this input
+to perform tasks,
+
+and returns a
+solution as an output.
+
+Let's explore how
+algorithms can be used
+
+to solve problems in Python.
+
+Imagine that you, as
+a security analyst,
+
+have a list of IP addresses.
+
+You want to extract the
+first three digits of each IP
+
+address, which will tell you
+information about the networks
+
+that these IP
+addresses belong to.
+
+To do this, we're going
+to write an algorithm that
+
+involves multiple Python
+concepts that we've covered so
+
+far, loops, lists, and strings.
+
+Here's a list with IP addresses
+that are stored as strings.
+
+For privacy reasons,
+in our example,
+
+we are not showing
+the full IP addresses.
+
+Our goal is to extract the first
+three numbers of each address
+
+and store them in a new list.
+
+Before we write any
+Python code, let's
+
+break down an
+approach to solving
+
+this problem with an algorithm.
+
+What if you had one IP address
+instead of an entire list?
+
+Well, then the problem
+becomes much simpler.
+
+The first step in
+solving the problem
+
+will be to use string slicing
+to extract the first three
+
+digits from one IP address.
+
+Now let's consider how to
+apply this to an entire list.
+
+As the second step,
+we'll use a loop
+
+to apply that solution to
+every IP address on the list.
+
+Previously, you learned
+about string slicing.
+
+So let's write some
+Python code to solve
+
+the problem for one IP address.
+
+Here, we are starting
+with one IP address
+
+that begins with 198.567.
+
+And we'll write a
+few lines of code
+
+to extract the first
+three characters.
+
+We'll use the bracket
+notation to slice the string.
+
+Inside the print statement,
+we have the address variable,
+
+which contains the IP
+address we want to slice.
+
+Remember that Python
+starts counting at 0.
+
+So to get the first
+three characters,
+
+we start our slice at index 0
+and then continue all the way
+
+until index 3.
+
+Remember that Python
+excludes the final index.
+
+In other words, Python
+will return the characters
+
+at index 0, 1, and 2.
+
+Now let's run this.
+
+We get the first three
+digits of the address, 198.
+
+Now that we're able to solve
+this problem for one IP
+
+address, we can put
+this code into a loop
+
+and apply it to all IP
+addresses in the original list.
+
+Before we do this, let's
+introduce one more method
+
+that we'll be using in this
+code, the append method.
+
+The append method adds
+input to the end of a list.
+
+For example, let's say that
+my list contains 1, 2, and 3.
+
+With this code, we can
+use the append method
+
+to add 4 to this list.
+
+First, we're given the IP list.
+
+Now we're ready to extract
+the first three characters
+
+from each element in this list.
+
+Let's create an empty list
+to store the first three
+
+characters of each
+IP from the list.
+
+Now, we can start a for loop.
+
+Let's break this down.
+
+The word "for"
+tells Python that we
+
+are about to start a for loop.
+
+We then choose address
+as the variable inside
+
+of the for loop.
+
+And we specify the list
+called IP as the iterable.
+
+As the loop runs, each
+element from the IP list
+
+will be stored temporarily
+in the address variable.
+
+Inside the for loop,
+we have a line of code
+
+to add the slice from
+address to the networks list.
+
+Breaking this down,
+we use the code
+
+we wrote earlier to get the
+first three characters of an IP
+
+address.
+
+We'll use our
+append method to add
+
+an item to the end of a list.
+
+In this case, we're adding
+to the networks list.
+
+Finally, let's print the
+networks list and run the code.
+
+The variable networks
+now contains a list
+
+of the first three
+digits of each IP address
+
+in the original list IP.
+
+That was a lot of information.
+
+Designing algorithms
+can be challenging.
+
+So it's a good idea to break
+them down into smaller problems
+
+before jumping into
+writing your code.
+
+We'll continue to practice this
+idea in the upcoming videos.
+
+Meet you there.
+
+We've already learned a lot
+about working with strings.
+
+This includes working with
+their positional indices
+
+and slicing them.
+
+In the previous
+video, we applied
+
+these to extract the
+first three digits
+
+from a list of IP addresses.
+
+In this video, we're going to
+focus on a more advanced way
+
+to search through strings.
+
+We'll learn about searching
+for patterns in strings
+
+through regular expressions.
+
+A regular expression,
+shortened to regex,
+
+is a sequence of characters
+that forms a pattern.
+
+This pattern can be used when
+searching within log files.
+
+We can use them to search
+for any kind of pattern.
+
+For example, we can
+find all strings that
+
+start with a certain prefix.
+
+Or we can find all strings
+that are a certain length.
+
+We can apply these to a security
+context in a variety of ways.
+
+For example, let's say we
+needed to find all IP addresses
+
+with a network ID of 184.
+
+Regular expressions would
+allow us to efficiently search
+
+for this pattern.
+
+We'll examine another example
+throughout this video.
+
+Let's say that we want
+to extract all the email
+
+addresses contained in a log.
+
+If we try to do this
+through the index method,
+
+we would need the
+exact email addresses
+
+we were searching for.
+
+As security analysts, we rarely
+have that kind of information.
+
+But if we use a
+regular expression that
+
+tells Python how an email
+address is structured,
+
+it would return all
+the strings that
+
+have the same elements
+as an email address.
+
+Even if we were given a
+log file with thousands
+
+of lines and entries, we could
+extract every email in the file
+
+by searching for the
+structure of an email address
+
+through a regular expression.
+
+We wouldn't need to know the
+specific emails to extract
+
+them.
+
+Let's explore the regular
+expression symbols
+
+that we need to do this.
+
+To begin, let's learn
+about the plus sign.
+
+The plus sign is a
+regular expression symbol
+
+that represents one
+or more occurrences
+
+of a specific character.
+
+Let's explain that through
+an example pattern.
+
+The regular expression pattern
+a+ sign matches a string of any
+
+length in which a is
+repeated, for example,
+
+just a single a, three a's in
+a row, or five a's in a row.
+
+It could even be
+1,000 a's in a row.
+
+We can start working
+with a quick example
+
+to see which strings this
+pattern would extract.
+
+Let's start with this
+string of device IDs.
+
+These are all the instances
+of the letter a written once
+
+or multiple times in a row.
+
+The first instance has one a.
+
+The second has two a's.
+
+The third one has one a.
+
+And the fourth has three a's.
+
+So if we told Python to find
+matches to the a+ sign regular
+
+expression, it would
+return this list of a's.
+
+The other building block we
+need is the backslash w symbol.
+
+This matches with any
+alphanumeric character,
+
+but it doesn't match symbols.
+
+1, k, and i are
+just three examples
+
+of what backslash w matches.
+
+Regular expressions
+can easily be
+
+combined to allow for even
+more patterns in a search.
+
+Before we apply this
+to our email context,
+
+let's explore the
+patterns we can
+
+search for if we combine the
+backslash w with the plus sign.
+
+Backslash w matches any
+alphanumeric character,
+
+and the plus sign matches
+any number of occurrences
+
+of the character before it.
+
+This means that the combination
+of backslash w plus sign
+
+matches an alphanumeric
+string of any length.
+
+The backslash w
+provides flexibility
+
+in the alphanumeric characters
+that this regular expression
+
+matches.
+
+And the plus sign
+provides flexibility
+
+in the length of the
+string that it matches.
+
+The strings 192, abc123,
+and security are just three
+
+possible strings that
+match to backslash w+.
+
+Now let's apply
+these to extracting
+
+email addresses from a log.
+
+Email addresses consist of text
+separated by certain symbols,
+
+like the @ symbol
+and the period.
+
+Let's learn how we can represent
+this as a regular expression.
+
+To start, let's think about
+the format of a typical email
+
+address, for example,
+user1@email1.com.
+
+The first segment
+of an email address
+
+contains alphanumeric
+characters,
+
+and the number of alphanumeric
+characters may vary in length.
+
+We can use our regular
+expression backslash w+
+
+for this portion to match to
+an alphanumeric string of any
+
+length.
+
+The next segment in an email
+address is the @ symbol.
+
+This segment is always present.
+
+We'll enter these directly
+in our regular expression.
+
+Including this is
+essential for ensuring
+
+that Python distinguishes email
+addresses from other strings.
+
+After the @ symbol
+is the domain name.
+
+Just like the first
+segment, this one
+
+varies depending on
+the email address,
+
+but it always contains
+alphanumeric characters.
+
+So we can use backslash w+ again
+to allow for this variation.
+
+Next, just like the
+@ symbol, a period
+
+is always part of
+an email address.
+
+But unlike the @ symbol,
+in regular expressions,
+
+the period has a
+special meaning.
+
+For this reason, we need to
+use backslash period here.
+
+When we add a backslash
+in front of it,
+
+we let Python know
+that we are not
+
+intending to use
+it as an operator
+
+and that our pattern
+should include
+
+a period in this location.
+
+For the last segment, we
+can also use backslash w+.
+
+This final part of
+an email address
+
+is often com but maybe
+other strings like net.
+
+When we put the
+pieces together, we
+
+get the regular expression
+we'll use to find
+
+email addresses in our log.
+
+This pattern will match
+all email addresses.
+
+It would exclude everything
+else in our string.
+
+This is because we've included
+the @ symbol and the period
+
+where they appear in the
+structure of an email address.
+
+Let's bring this into Python.
+
+We'll use regular expressions
+to extract email addresses
+
+from a string.
+
+Regular expressions can
+be used when their re
+
+module is imported into Python.
+
+So we begin with that step.
+
+Later we'll learn how to import
+and open files like logs.
+
+But for now, we've
+stored our log
+
+as a string variable
+named email log.
+
+Because this is a
+multi-line string,
+
+we're using three sets of
+quotation marks instead
+
+of just one.
+
+Next, we'll apply the find all
+function from the re module
+
+to our regular expression.
+
+Re.findall returns
+a list of matches
+
+to our regular expression.
+
+Let's use this with the regular
+expression we created earlier
+
+for email addresses.
+
+The first argument is the
+pattern that we want to match.
+
+Notice that we place
+it in quotation marks.
+
+The second argument
+indicates where
+
+to search for the pattern.
+
+In this case, we're searching
+through the string contained
+
+within the email_log variable.
+
+When we run this, we get
+a list of all the emails
+
+in the string.
+
+Imagine applying this to a
+log with thousands of entries.
+
+Pretty useful, right?
+
+This was just an
+introduction to the power
+
+of regular expressions.
+
+There are many more
+symbols you can use.
+
+I encourage you to explore
+regular expressions on your own
+
+and learn more.
+
+Congratulations.
+
+We accomplished a lot together.
+
+Let's take time to
+quickly go through
+
+all the new concepts we covered.
+
+We started this course
+by focusing on working
+
+with strings and lists.
+
+We learned methods
+that work specifically
+
+with these data types.
+
+We also learned to
+work with indices
+
+and extract the
+information we need.
+
+Next, we focused on
+writing algorithms.
+
+We wrote a simple algorithm
+that sliced the network
+
+ID from a list of IP addresses.
+
+Finally, we covered using
+regular expressions.
+
+Regular expressions allow
+you to search for patterns.
+
+And this provides expanded
+ways to locate what you
+
+need in logs and other files.
+
+These are complex concepts,
+and you are always
+
+welcome to visit the videos
+again whenever you like.
+
+With these concepts,
+you took a big step
+
+towards being able
+to work with data
+
+and write the algorithms that
+security professionals need.
+
+Throughout the rest
+of this course,
+
+you're going to get more
+practice with Python
+
+and what it can offer
+to security analysts.
+
+
+
+We've learned a lot about
+Python together already,
+
+and we still have more to cover.
+
+In this section,
+we're going to explore
+
+how a security analyst
+like yourself puts Python
+
+into practice.
+
+As a security
+analyst, you'll likely
+
+work with security logs
+that capture information
+
+on various system activities.
+
+These logs are often very large
+and hard to quickly interpret.
+
+But Python can easily
+automate these tasks
+
+and make things
+much more efficient.
+
+So first, we'll focus on opening
+and reading files in Python.
+
+This includes log files.
+
+We'll then explore
+parsing files.
+
+This means you'll be able to
+work with files in ways that
+
+provide you with the
+security-related information
+
+that you're targeting.
+
+Finally, part of writing
+code is debugging code.
+
+It's important to be able
+to interpret error messages
+
+to make your code work.
+
+We'll cover common types
+of Python errors and ways
+
+to resolve them.
+
+Overall, after
+completing this section,
+
+you'll have a better
+understanding of Python
+
+and how, as a security
+analyst, you can use it.
+
+I can't wait to join you.
+
+Automation is a key concern
+in the security profession.
+
+For example, it would
+be difficult to monitor
+
+each individual attempt
+to access the system.
+
+For this reason, it's helpful
+to automate the security
+
+controls put in place to
+keep malicious actors out
+
+of the system.
+
+And it's also helpful to
+automate the detection
+
+of unusual activity.
+
+Python is great for automation.
+
+Let's explore three
+specific examples of this.
+
+First, imagine you're a security
+analyst for a health care
+
+company that stores confidential
+patient records in a database
+
+server.
+
+Your company wants to
+implement additional controls
+
+to protect this information.
+
+In order to enhance the
+security of the records,
+
+you decide to implement a
+timeout policy that locks out
+
+a user if they spend more
+than three minutes logging
+
+into the database.
+
+This is because it's possible
+that if a user is spending
+
+too much time, it could be that
+they are guessing the password.
+
+To do this, you can
+use Python to identify
+
+when a user has
+entered a username
+
+and start tracking the
+time until this user enters
+
+the correct password.
+
+Now let's go over a
+different example.
+
+This time, imagine you are
+a security analyst working
+
+at a law firm.
+
+There have recently been
+some ongoing security attacks
+
+where threat actors hacked
+into employee accounts
+
+and attempt to steal
+client information.
+
+They then threatened to
+use this maliciously.
+
+So the security team is
+working to target all security
+
+vulnerabilities that allow
+these attackers to break
+
+into the company's databases.
+
+You personally are responsible
+for tracking all user logins
+
+by checking their
+login timestamp, IP
+
+address, and location of login.
+
+For example, if a user logs
+in during the early hours
+
+of the morning, they
+should be flagged.
+
+Also, if they are logging
+in from a location that's
+
+not one of the two
+established work zones,
+
+you must flag their account.
+
+Finally, if a user
+is simultaneously
+
+logging in from two
+different IP addresses,
+
+you must flag their account.
+
+Python can help you keep
+track of and analyze
+
+all of this different
+login information.
+
+Let's consider
+one final example.
+
+Imagine you are a
+security analyst working
+
+at a large organization.
+
+Recently this organization has
+increased security measures
+
+to make sure all
+customer-facing applications are
+
+better protected.
+
+Since there is a password to
+access these applications,
+
+they want to monitor all
+password login attempts
+
+for suspicious activity.
+
+One sign of
+suspicious activity is
+
+having several
+failed login attempts
+
+within a short amount of time.
+
+You need to flag
+users if they had
+
+more than three login failures
+in the last 30 minutes.
+
+One way you could
+do this in Python
+
+is by parsing a static txt
+log file with all user login
+
+attempts to each machine.
+
+Python could structure the
+information in this file,
+
+including the username,
+IP address, timestamp,
+
+and login status.
+
+It could then use
+conditionals to determine
+
+if a user needs to be flagged.
+
+These are just a
+few examples of how
+
+a security analyst
+might apply Python
+
+in their day-to-day work.
+
+I hope you are as excited
+as I am to create solutions
+
+for security problems.
+
+
+
+Security professionals
+are often tasked
+
+with reviewing log files.
+
+But these files may have
+thousands of entries.
+
+So it can be helpful to
+automate this process.
+
+And that's where
+Python comes in.
+
+Let's start by importing
+a simple text file that
+
+just contains a few
+words and then storing it
+
+as a string in Python.
+
+All we need is the text
+file, its location,
+
+and the right Python keywords.
+
+We're going to start by
+typing a with statement.
+
+The keyword "with"
+handles errors
+
+and manages external resources.
+
+When using "with," Python
+knows to automatically release
+
+resources that
+would otherwise keep
+
+our system busy until the
+program finishes running.
+
+It's often used in file
+handling to automatically close
+
+a file after reading it.
+
+To open files and
+then read them,
+
+we write a statement that
+begins with the keyword "with."
+
+Then we use the open function.
+
+Open is a function that
+opens a file in Python.
+
+The first parameter is
+the name of the text
+
+file on your computer or a
+link to it on the internet.
+
+Depending on the
+Python environment,
+
+you might also need to
+include a path to this file.
+
+Remember to include the .txt
+extension in the file name.
+
+Now, let's discuss
+the second parameter.
+
+This parameter in
+the open function
+
+tells Python what we
+want to do with the file.
+
+In our case, we
+want to read a file.
+
+So we use the letter r
+between quotation marks.
+
+If we wanted to
+write to a file, we
+
+would replace this r with a w.
+
+But here, we're
+focusing on reading.
+
+Finally, file is a variable that
+contains the file information
+
+as long as we're inside
+the with statement.
+
+Like with other
+types of statements,
+
+we end our with
+statement with a colon.
+
+The code that comes
+after the colon
+
+will tell Python what to do
+with the content of the file.
+
+Let's go into Python
+and use what we learned.
+
+We're ready to open a
+text file in Python.
+
+Now we'll type our
+with statement.
+
+
+
+Next, we'll use Python's
+built-in read method.
+
+The read method converts
+files into strings.
+
+Now let's go back to
+our with statement.
+
+Similar to our for
+loop, with statements
+
+start an indent
+on the next line.
+
+This tells Python that
+this code is happening
+
+inside the with statement.
+
+Inside of the
+statement, we're going
+
+to use the read function to
+turn our file into a string
+
+and store that inside
+a new variable.
+
+This new variable can be used
+outside of the with statement.
+
+So let's exit the with statement
+by removing the indentation
+
+and print the variable.
+
+
+
+Perfect.
+
+The string from the
+text prints out.
+
+
+
+Coming up, we're going
+to discuss parsing files
+
+so we are equipped to handle
+security logs in the future.
+
+
+
+Now that you know how to
+import text files into Python,
+
+we're going to take this
+one step further and learn
+
+how to give them structure.
+
+This will allow us to
+analyze them more easily.
+
+This process is often
+referred to as parsing.
+
+Parsing is the process
+of converting data
+
+into a more readable format.
+
+To do this, we're
+going to put together
+
+everything we learned
+about lists and strings
+
+and learn another method for
+working with strings in Python.
+
+The method we need
+is the split method.
+
+The split method converts
+a string into a list.
+
+It does this by
+separating the string
+
+based on a specified character.
+
+Or if no argument is
+passed, every time
+
+it encounters a whitespace,
+it separates the string.
+
+So a split would
+convert the string
+
+"we are learning about
+parsing" into this list.
+
+We are using the split method
+to separate the strings
+
+into smaller chunks that we can
+analyze more easily than one
+
+big block of text.
+
+In this video, we'll work with
+an example of a security log
+
+where every line represents
+a new data point.
+
+To order these
+points in a list, we
+
+want to separate the text
+based on the new line.
+
+Python considers a new line
+to be a type of whitespace.
+
+So we can use the split method
+without passing an argument.
+
+We'll start with our code
+from the previous video.
+
+Remember, we used this
+code to open a file
+
+and then read it into a string.
+
+Now let's split that string into
+a list using the split method
+
+and then print the output.
+
+After we run it,
+Python outputs a list
+
+of usernames instead of
+one big string of them.
+
+If we want to save
+this list, we would
+
+need to assign it
+to another variable.
+
+For example, we can call
+the variable usernames.
+
+And then we run it again.
+
+And now this list can
+be reused in other code.
+
+Congratulations.
+
+You just learned the basics of
+parsing a text file in Python.
+
+In the next videos, we're
+going to be exploring
+
+techniques that help us
+work more in-depth with data
+
+in Python.
+
+
+
+We're now going to
+bring all of the pieces
+
+together to import a file,
+parse it, and implement
+
+a simple algorithm to help
+us detect suspicious login
+
+attempts.
+
+In this video, we want
+to create a program that
+
+runs every time a new
+user logs in and checks
+
+if that user has had three or
+more failed login attempts.
+
+First let's discuss the
+structure of our inputs
+
+to build a strategy to
+develop our program.
+
+We have a log file stored
+in a txt format that
+
+contains one username per line.
+
+Each username represents
+a failed login attempt.
+
+So when a user logs
+in, we want our program
+
+to check for their
+username and count
+
+how many times that
+username is in our log file.
+
+If that username is repeated
+three or more times,
+
+the program returns an alert.
+
+We'll start with
+code that imports
+
+the file of login attempts.
+
+It splits it and it
+stores it into a variable
+
+named usernames.
+
+Let's try printing
+the variable usernames
+
+to check for its contents.
+
+We'll run this.
+
+Perfect.
+
+This is exactly
+what we expected.
+
+The variable usernames is ready
+to be used in our algorithm.
+
+Now let's develop a strategy for
+counting username occurrences
+
+in the list.
+
+We'll start with the first eight
+elements of the usernames list.
+
+We notice that there are two
+occurrences of the username
+
+e-r-a-a-b in the list.
+
+But how would we tell
+Python to count this?
+
+We'll implement a for loop that
+iterates through every element.
+
+Let's represent the loop
+variable with an arrow.
+
+We also define a counter
+variable that starts at 0.
+
+So our for loop starts at
+the username e-l-a-r-s-o-n.
+
+At every element, Python
+asks, is this element equal
+
+to the string e-r-a-a-b?
+
+If the answer is yes,
+the counter goes up by 1.
+
+If it isn't, then the
+counter stays the same.
+
+Since e-l-a-r-s-o-n is
+not the same as e-r-a-a-b,
+
+the counter remains 0.
+
+Then we move on to
+the next element.
+
+We encounter our first
+occurrence of e-r-a-a-b.
+
+At this point, the
+counter increases by 1.
+
+As we move to the next element,
+we find another occurrence
+
+of e-r-a-a-b.
+
+So we increase our
+counter by 1 again.
+
+That means that our
+counter is now at 2.
+
+We would continue this process
+for the rest of the list.
+
+Now that we know the
+solution, let's talk about how
+
+to implement it in Python.
+
+Solving the problem
+in Python will
+
+involve a for loop, a counter
+variable, and an if statement.
+
+Let's get back into our code.
+
+We'll create a function that
+counts a user's failed login
+
+attempts.
+
+First, let's define
+our function.
+
+We'll call it login_check.
+
+It takes two parameters.
+
+The first is called login_list.
+
+This will be used for the
+list of failed login attempts.
+
+The second is
+called current_user.
+
+This will be used for
+the user who logs in.
+
+Inside of this
+function, we start
+
+by defining the counter
+variable and set its value to 0.
+
+Now we start the for loop.
+
+We'll use i as our loop variable
+and iterate through the login
+
+list.
+
+In other words, as
+the loop iterates,
+
+it would run through
+all the failed login
+
+attempts in the list.
+
+Directly inside of the for
+loop, we start the if statement.
+
+The if statement checks
+if our loop variable
+
+is equal to the current
+user we are searching for.
+
+If this condition is true, we
+want to add 1 to the counter.
+
+We're almost done
+with our algorithm.
+
+Now we just need the
+final if/else statement
+
+to print the alert.
+
+If the counter adds
+up to 3 or more,
+
+we need to tell the user
+that their account is locked,
+
+so they can't log in.
+
+
+
+We'll also type
+an else statement
+
+for users who can log in.
+
+Our algorithm is complete.
+
+Let's try out our new function
+on an example username.
+
+We can pull out a few of
+the usernames in the list
+
+and try our function on them.
+
+Let's use the first
+name in the list.
+
+Let's run the code.
+
+According to our code,
+this user can log in.
+
+They have fewer than three
+failed login attempts.
+
+Now, let's go back to
+our user e-r-a-a-b.
+
+Remember, they had two entries
+in the list of the first eight
+
+names in our failed
+login attempts.
+
+Do you think they'll
+be able to log in?
+
+When we run, we get an
+Account Locked message.
+
+This means they had three or
+more failed login attempts.
+
+Excellent work.
+
+You just developed your
+first security algorithm
+
+involving a log.
+
+As you grow in
+your skills, you'll
+
+learn how to make this
+algorithm more efficient.
+
+But this solution
+works well for now.
+
+In this video, we
+recapped everything
+
+we learned so far,
+from list operations
+
+to algorithm development
+all the way to file parsing.
+
+We did this while building
+an algorithm we can
+
+apply in a security context.
+
+
+
+As a security
+analyst, you might be
+
+required to read or write code.
+
+And one of the
+biggest challenges
+
+is getting it to run
+and function properly.
+
+In fact, fixing
+complex errors in code
+
+can sometimes take up
+just as much if not more
+
+time than writing your code.
+
+This is why it's important
+to develop this skill.
+
+Now that you've learned the
+basics of coding in Python,
+
+it's important to learn
+how to deal with errors.
+
+For that reason, we'll focus
+on debugging your code.
+
+Debugging is the practice
+of identifying and fixing
+
+errors in code.
+
+In this video, we'll explore
+some techniques for this.
+
+There are three types of errors,
+syntax errors, logic errors,
+
+and exceptions.
+
+Syntax errors involve invalid
+usage of the Python language,
+
+such as forgetting to add a
+colon after a function header.
+
+Let's explore this
+type of error.
+
+When we run this
+code, we get a message
+
+that indicates there
+is a syntax error.
+
+Depending on the
+Python environment,
+
+it might also display
+additional details.
+
+We will typically get
+information about the error,
+
+like its location.
+
+These syntax errors
+are often easy to fix
+
+since you can find exactly
+where the error happened.
+
+They are similar to correcting
+simple grammar mistakes
+
+in an email.
+
+Since the error message
+tells us the problem
+
+is on the line that defines
+the function, let's go there.
+
+In this case, we can add
+a colon to the header
+
+and resolve our error.
+
+When we run it again, there's
+no longer an error message.
+
+This is just one example
+of a syntax error.
+
+Other examples include
+omitting a parentheses
+
+after a function,
+misspelling a Python keyword,
+
+or not properly closing
+quotation marks for a string.
+
+Next let's focus
+on logic errors.
+
+Logic errors may not
+cause error messages.
+
+Instead, they produce
+unintended results.
+
+A logic error could be as simple
+as writing the incorrect text
+
+within a print statement.
+
+Or it might involve something
+like writing a less than symbol
+
+instead of less than
+or equal to symbol.
+
+This change in
+operator would exclude
+
+a value that was needed for
+the code to work as intended.
+
+For example, imagine that you
+reach out to a response team
+
+when the priority level
+of an issue is less than 3
+
+instead of less
+than or equal to 3.
+
+This means all events
+classified as priority level 3
+
+could go unnoticed
+and unresolved.
+
+To diagnose a logic error
+that's difficult to find,
+
+one strategy is to
+use print statements.
+
+You'll need to insert
+print statements
+
+throughout your code.
+
+The print statements
+should describe
+
+the location in the code--
+
+for example, print line
+20 or print line 55--
+
+inside the conditional.
+
+The idea is to use
+these print statements
+
+to identify which
+sections of the code
+
+are functioning properly.
+
+When a print statement
+doesn't print as expected,
+
+this helps you identify sections
+of the code with problems.
+
+Another option for
+identifying logic errors
+
+is to use a debugger.
+
+A debugger will let you insert
+breakpoints into your code.
+
+Breakpoints allow you to
+segment your code into sections
+
+and run just one
+portion at a time.
+
+Just like with print statements,
+running these sections
+
+independently can help
+isolate problems in the code.
+
+OK.
+
+Let's move on to our last
+type of error, an exception.
+
+Exceptions happen when
+the program doesn't
+
+know how to execute code,
+even though there are
+
+no problems with the syntax.
+
+Exceptions occur for
+a variety of reasons.
+
+For example, they can
+happen when something
+
+is mathematically impossible,
+like asking the code to divide
+
+something by 0.
+
+Exceptions might
+also happen when
+
+you ask Python to access
+index values that don't exist,
+
+or when Python doesn't recognize
+variable or function names.
+
+Exceptions also may occur when
+you use an incorrect data type.
+
+Let's demonstrate an exception.
+
+Let's say you have a variable
+called my_string that contains
+
+the word "security."
+
+Since this string
+has eight characters,
+
+we can successfully print
+any index less than 8.
+
+Index 0 contains s.
+
+
+
+Index 1 contains e.
+
+
+
+And index 2 contain c.
+
+
+
+But if you try to access
+the character at index 100,
+
+you'll get an error.
+
+Let's run this and
+explore what happens.
+
+After it successfully prints
+the first three statements,
+
+we get an error message,
+"string index out of range."
+
+For exception
+errors, you can also
+
+make use of debuggers
+and print statements
+
+to figure out the
+potential source of error.
+
+Errors and exceptions
+can be expected
+
+when working in Python.
+
+The important thing is to
+know how to deal with them.
+
+Hopefully this video provided
+some valuable insight
+
+about debugging code.
+
+This will help ensure that
+the code that you write
+
+is functional.
+
+Let's say our coworkers need
+some help getting their code
+
+to work, and we offer
+to debug their code
+
+to make sure it runs smoothly.
+
+First, we need to know about
+the purpose of the code.
+
+In this case, the
+purpose of the code
+
+is to parse a single line
+from a log file and return it.
+
+The log file we're using tracks
+potential issues with software
+
+applications.
+
+Each line in the log contains
+the HTTP response status codes,
+
+the date, the time, and
+the application name.
+
+When writing this
+code, our coworkers
+
+consider whether all the status
+codes needed to be parsed.
+
+Since 200 signals
+a successful event,
+
+they concluded that lines
+with this status code
+
+shouldn't be parsed.
+
+Instead, Python should
+return a message indicating
+
+that parsing wasn't needed.
+
+To start the debugging
+process, let's first
+
+run the code to identify
+what errors appear.
+
+Our first error
+is a syntax error.
+
+The error message also
+tells us the syntax error
+
+occurs in a line that
+defines the function.
+
+So let's scroll to
+that part of the code.
+
+As you might recall,
+these function headers
+
+should end with a colon.
+
+Let's go ahead and
+add that to the code.
+
+Now the syntax error
+should go away.
+
+So let's run the code again.
+
+So now our syntax error is
+gone, which is good news.
+
+But we have another
+error, a name error.
+
+Name error is actually
+a type of exception,
+
+meaning we've
+written valid syntax,
+
+but Python can't
+process the statement.
+
+According to the
+error, the interpreter
+
+doesn't understand the variable
+application_name at the point
+
+where it's being added
+to the parts line list.
+
+Let's examine that
+section of code.
+
+This error means we haven't
+assigned the variable name
+
+properly.
+
+So now, let's go back to
+where it was first assigned
+
+and determine what happened.
+
+We find that this
+variable is misspelled.
+
+There should be two p's in
+application_name, not one.
+
+Let's correct the spelling.
+
+Now that we've fixed
+it, it should work.
+
+So let's run the code.
+
+Great.
+
+We fixed an error
+and an exception,
+
+and we no longer have
+any error messages.
+
+But this doesn't mean our
+debugging work is done.
+
+Let's make sure the
+logic of the program work
+
+as intended by
+examining the output.
+
+Our output is a parse line.
+
+In most cases, this
+would be what we wanted.
+
+But as you might recall,
+if the status code is 200,
+
+our code shouldn't
+parse the line.
+
+Instead, it should
+print the message
+
+that no parsing is needed.
+
+And when we called it
+with a status code of 200,
+
+there was a logic error because
+this message wasn't displayed.
+
+So let's go back
+to the conditional
+
+we used to handle the status
+code of 200 and investigate.
+
+To find the source of the issue,
+let's add print statements.
+
+In our print statements,
+we'll include
+
+the line number and a
+description of the location.
+
+We'll add one print statement
+before the line of code
+
+containing return parsed list.
+
+We'll add another
+above the if statement
+
+that checks for
+the 200 status code
+
+to determine if it
+reaches the if statement.
+
+And we'll add one
+more print statement
+
+inside the if statement to
+determine whether the program
+
+even enters it.
+
+Now let's run the code and
+review what gets printed.
+
+Only the first print
+statement printed something.
+
+The other two print statements
+after this didn't print.
+
+This means the program didn't
+even enter the if statement.
+
+The problem occurred somewhere
+before the line that returns
+
+the parsed_line variable.
+
+Let's investigate.
+
+When Python encounters
+the first return
+
+statement, which sends
+back the parsed list,
+
+it exits the function.
+
+In other words, it
+returns the list
+
+before it even checks for
+a status code value of 200.
+
+To fix this, we must move
+the if statement checking
+
+for the status code somewhere
+before returns parsed_line.
+
+Let's first delete
+our print statements.
+
+This makes the
+program more efficient
+
+because it doesn't run any
+unneeded lines of code.
+
+Now, let's move
+the if statement.
+
+We'll place it right
+after the line of code
+
+that involves parsing the
+status code from the line.
+
+Let's run our code and confirm
+that this fixed our issue.
+
+Yes.
+
+It printed Successful
+Event - No Parsing Needed.
+
+Great work.
+
+We fixed this logic error.
+
+I enjoyed debugging
+this code with you.
+
+I hope this video has
+strengthened your understanding
+
+of some helpful
+debugging strategies
+
+and gave you an idea of some
+errors you might encounter.
+
+Great work in this section.
+
+We focused on a
+few new topics that
+
+will help you put Python
+into practice in the security
+
+profession.
+
+First, we explored opening
+and reading files in Python.
+
+Security analysts work
+with a lot of log files.
+
+So the ability to do
+this is essential.
+
+Next, we covered parsing files.
+
+Log files can be very long.
+
+For this reason,
+structuring these files
+
+to make them more readable
+helps you automate your tasks
+
+and get the
+information you need.
+
+And last, we focused
+on debugging code.
+
+Knowing how to debug your code
+can save you a lot of time,
+
+especially as your code
+increases in complexity.
+
+Overall, I hope you feel
+proud of what you've
+
+accomplished in this section.
+
+Addressing security issues
+through Python is exciting.
+
+And the information we covered
+will allow you to do that.
+
+As we wrap up this
+course, I want
+
+to congratulate you for your
+commitment to learning Python.
+
+You should feel
+accomplished having
+
+explored a programming
+language that's
+
+useful in the security field.
+
+Let's recap some of
+what we've learned.
+
+First, we covered basic
+programming concepts in Python.
+
+We discussed variables, data
+types, conditional statements,
+
+and iterative statements.
+
+These topics provided
+important foundations
+
+for what we explored
+later in the course.
+
+And our next focus was on
+writing effective Python code.
+
+We learned how we can reuse
+functions in our programs
+
+to improve efficiency.
+
+We explored building
+functions and even created
+
+our own user-defined functions.
+
+Another topic was
+modules and libraries.
+
+The pre-packaged functions
+and variables they contain
+
+can make our work easier.
+
+Last, we learned ways to
+ensure our code is readable.
+
+In the next section,
+we focused on working
+
+with strings and lists.
+
+We learned a variety
+of methods that can
+
+be applied to this data type.
+
+We also learned
+about indices and how
+
+to slice characters from a
+string or elements from a list.
+
+We put all of this together
+to write a simple algorithm.
+
+And then we explored
+how regular expressions
+
+can be used to find
+patterns in the strings.
+
+And last, we wrapped up
+the course with a focus
+
+on putting Python into practice.
+
+We learned how to open,
+read, and parse files.
+
+With these skills, you
+can work with a variety
+
+of logs you'll encounter
+in a security setting.
+
+We also learned
+how to debug code.
+
+This is an important
+skill for all programmers.
+
+Wow.
+
+You learned a lot about
+Python in this course.
+
+So great job.
+
+I hope soon you'll join me in
+using Python in the security
+
+profession.
+
+And in the meantime, I
+encourage you to practice.
+
+And feel free to rewatch these
+videos whenever you like.
+
+The more you study
+these concepts,
+
+the easier they will become.
+
+Thanks again for joining
+me as we explored Python.
+
+[MUSIC PLAYING]
+
+
+
